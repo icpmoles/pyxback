@@ -1,0 +1,42 @@
+---
+label: Blog
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: text
+  name: author
+  label: author
+  default: Iacopo Moles
+- type: datetime
+  name: date
+  label: date
+  default: now
+  config:
+    required: true
+- type: list
+  name: tags
+  label: tags
+  config:
+    use_select: true
+    source:
+      type: simple
+- type: file
+  name: banner
+  label: banner
+- name: latex
+  type: boolean
+  label: LAtex
+  default: false
+- name: toc
+  type: boolean
+  label: Table of Contents
+  default: true
+  description: Shows a menu with all the subsections of the article
+pages:
+- content/post/iv-test/index.md
+- content/post/my trouble with AMP and HUGO/index.md

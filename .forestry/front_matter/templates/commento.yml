@@ -1,0 +1,21 @@
+---
+label: Commento
+hide_body: true
+fields:
+- type: text
+  name: _id
+  label: _id
+- type: text
+  name: name
+  label: name
+- type: text
+  name: email
+  label: email
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: body
+  label: body
+  config:
+    required: true
