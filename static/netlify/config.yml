@@ -1,7 +1,7 @@
 
 backend:
   name: github
-  repo: icpmoles/hugoback # Branch to update (optional; defaults to master)
+  repo: icpmoles/pyxback # Branch to update (optional; defaults to master)
 media_folder: content/uploads
 public_folder: /uploads
 collections:
@@ -16,8 +16,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
-      - { label: 'Banner', name: 'banner', widget: 'file' }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: 'false'  }
+      - { label: 'Banner', name: 'banner', widget: 'file', required: 'false' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Latex', name: 'latex', widget: 'boolean', default: 'false' }
       - { label: 'Table of Contents', name: 'toc', widget: 'boolean', default: 'false' }
