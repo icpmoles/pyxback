@@ -1,0 +1,3 @@
+[submodule "themes/pyxill2"]
+	path = themes/pyxill2
+	url = https://github.com/IcpMoles/pyxill2
