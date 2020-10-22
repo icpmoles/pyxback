@@ -14,6 +14,16 @@ Hugo supports custom elements to incorporate snippets from other services.
 
 <!--more-->
 
+## Instagram
+
+```markdown
+{{</* instagram BWNjjyYFxVx */>}}
+```
+
+Renders as:
+
+{{< instagram BWNjjyYFxVx >}}
+
 ## Twitter
 
 ```markdown
