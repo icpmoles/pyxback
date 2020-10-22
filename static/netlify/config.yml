@@ -3,7 +3,7 @@ backend:
   name: github
   repo: IcpMoles/pyxback
 media_folder: content/uploads
-public_folder: uploads
+public_folder: /uploads
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -11,7 +11,7 @@ collections:
     create: true
     slug: '{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
