@@ -37,6 +37,3 @@ fields:
   label: Table of Contents
   default: true
   description: Shows a menu with all the subsections of the article
-pages:
-- content/post/iv-test/index.md
-- content/post/my trouble with AMP and HUGO/index.md
