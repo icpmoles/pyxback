@@ -16,7 +16,7 @@ Hugo supports custom elements to incorporate snippets from other services.
 ## Twitter
 
 ```markdown
-{{<*\ tweet 877500564405444608 \*>}}
+{{</* tweet 877500564405444608 */>}}
 ```
 
 Renders as:
