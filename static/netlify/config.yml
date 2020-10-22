@@ -1,7 +1,7 @@
 
 backend:
-  name: github
-  repo: IcpMoles/pyxback
+  name: git-gateway
+  branch: master
 media_folder: content/uploads
 public_folder: /uploads
 collections:
