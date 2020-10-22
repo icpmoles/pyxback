@@ -27,6 +27,32 @@ Renders as:
 
 ## Vimeo
 
+```markdown
+{{</* vimeo 146022717 */>}}
+```
+
+Renders as:
+
+{{< vimeo 146022717 >}}
+
+
 ## Gist
 
+```markdown
+{{</* gist spf13 7896402 */>}}
+```
+
+Renders as:
+
+{{< gist spf13 7896402 >}}
+
+
 ## YouTube
+
+```markdown
+{{</* youtube w7Ft2ymGmfc */>}}
+```
+
+Renders as:
+
+{{< youtube w7Ft2ymGmfc >}}
