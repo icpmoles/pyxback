@@ -1,7 +1,7 @@
 
 backend:
   name: github
-  repo: icpmoles/pyxback # Branch to update (optional; defaults to master)
+  repo: IcpMoles/pyxback
 media_folder: content/uploads
 public_folder: /uploads
 collections:
