@@ -5,6 +5,7 @@ date: 2020-10-22T13:49:04.000Z
 tags:
   - Hugo
   - shortcode
+  - tutorial
 banner: ""
 latex: false
 toc: true
