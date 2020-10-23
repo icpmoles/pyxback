@@ -33,16 +33,36 @@ Congrats, your blog is up and running.
 
 Now head over to your Site Settings -> Identity and enable the Identiy manager.
 
+![](/uploads/identity.png)
+
 Now go to  Site Settings -> Identity -> Services and enable the Git Gateway.
+
+![](/uploads/gateway1.png)
 
 Now go to  Site Settings -> Identity -> Registration and in the Registration Preferences set to Invite Only.
 
+![](/uploads/invite-only.png)
+
 Now go to  Site Settings -> Identity -> Emails and change all Path to template of the various subsections to `/netlify`.
+
+![](/uploads/template-path.png)
 
 Now you can invite users (and yourself) to edit your website by using their emails by going to Identity and clicking Invite Users.
 
 You can enable other service providers too in Site Settings -> Identity -> Registration  -> External Providers and by adding them using the default configuration.
 
+![](/uploads/provider.png)
+
+![](/uploads/provider2.png)
+
 Now go to  Site Settings -> Identity -> General -> Site Details and you can change the random string assigned by Netlify to a more human friendly name for your website that you would like to see as your main url.
 
+![](/uploads/name-1.png)
+
+![](/uploads/name-2.png)
+
 Now you can edit your blog content by heading to: `yoursite.netlify.com/netlify`
+
+![](/uploads/cms1.png)
+
+![](/uploads/cms2.png)
