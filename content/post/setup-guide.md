@@ -71,3 +71,5 @@ Now you can edit your blog content by heading to: `yoursite.netlify.com/netlify`
 Once logged in you can use the CMS to manage your blog.
 
 ![](/uploads/landing-cms.png)
+
+## Forestry
