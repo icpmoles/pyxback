@@ -79,7 +79,10 @@ Go to Settings -> Config Vars and type the following fields:
 Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
 
 Now to enable to register your comment open a webpage and type ```http
-<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments```
+
+<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments
+
+```
 
 A confirmation will appear for only the first time.
 
