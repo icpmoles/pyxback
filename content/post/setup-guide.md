@@ -78,7 +78,7 @@ Once logged in you can use the CMS to manage your blog.
 
 Head over to [Forestry](https://forestry.io/) and signup/login with your favorite method.
 
-![](/uploads/landing.png)
+![](/uploads/forest-landing.png)
 
 In the dashboard press Add Site. Select Hugo as your static site generator.
 
@@ -92,6 +92,6 @@ Then after being logged in select the repository you made at the initial steps o
 
 ![](/uploads/branch-select.png)
 
-Now head over to Settings -> General -> Url and copy your website URL from Netlify. 
+Now head over to Settings -> General -> Url and copy your website URL from Netlify.
 
 ![](/uploads/url-set.png)
