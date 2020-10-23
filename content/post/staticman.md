@@ -51,7 +51,10 @@ Go to Settings -> Config Vars and type the following fields:
 
 `NODE_ENV` = `production`
 
-`GITHUB_TOKEN` = [(Private Access Token from before)](#Deploy-on-Heroku)
+`GITHUB_TOKEN` = [(Private Access Token from before)](#deploy-on-heroku)
 
-`RSA_PRIVATE_KEY` = [(Private Key from before)](#Generate-Private-Key)
+`RSA_PRIVATE_KEY` = [(Private Key from before)](#generate-private-key)
 
+## Check if it works 
+
+Open a webpage and type `name-of-your-heroku-istance.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
