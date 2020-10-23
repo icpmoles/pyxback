@@ -18,6 +18,8 @@ How to setup your comments
 
 Head to Github and on Settings -> Developer Settings -> Personale Access Tokens and click [Generate New Token](https://github.com/settings/tokens/new).
 
+![](/uploads/screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png)
+
 Write a placeholder name and select the repo and user subsections. Then press Generate token.
 
 Copy the new token generated and save it somewhere. Keep in mind that you can't recover it in future.
@@ -28,19 +30,31 @@ Head over to the GitHub [project page](https://github.com/eduardoboucas/staticma
 
 You will land on a page where a name for your project is asked. Type whatever name you would like and confirm.
 
+![](/uploads/heroku-landing.png)
+
+![](/uploads/building.png)
+
 At the end of the setup you can continue on Manage App.
 
 ## Generate Private Key
 
 From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session.
 
-A .txt file is going to be downloaded. Open it and copy the section made by:
+![](/uploads/command-pem.png)
+
+![](/uploads/save-session.png)
+
+A .txt file is going to be downloaded. 
+
+![](/uploads/txt.png)
+
+Open it and copy the section made by:
 
 {{< highlight conf "linenos=table">}}
 
------BEGIN RSA PRIVATE KEY-----
+\-----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
------END RSA PRIVATE KEY-----
+\-----END RSA PRIVATE KEY-----
 
 {{< / highlight>}}
 
