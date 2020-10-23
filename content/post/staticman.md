@@ -3,16 +3,15 @@ title: Staticman
 author: Iacopo Moles
 date: 2020-10-22T23:22:07.833+00:00
 tags:
-- GitHub
-- setup
-- configuration
-- forestry
-- tutorial
-- comments
+  - GitHub
+  - setup
+  - configuration
+  - forestry
+  - tutorial
+  - comments
+banner: ""
 latex: false
 toc: true
-banner: ''
-
 ---
 How to setup your comments <!--more-->
 
@@ -104,4 +103,4 @@ Save.
 
 Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunatelly you need the `placeholder` folder to avoid breaking the website.
 
-[_linux]: Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊.
+[^linux]: Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊.
