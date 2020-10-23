@@ -35,6 +35,6 @@ Now go to  Site Settings -> Identity -> Services and enable the Git Gateway.
 
 Now go to  Site Settings -> Identity -> Registration and in the Registration Preferences set to Invite Only.
 
-Now go to  Site Settings -> Identity -> Email and change all Path to template to `/netlify`
+Now go to  Site Settings -> Identity -> Emails and change all Path to template of the various subsctions to `/netlify`
 
-Now you can invite users (and yourself) to edit your website by using their emails by going to Identity
+Now you can invite users (and yourself) to edit your website by using their emails by going to Identity and clicking Invite Users
