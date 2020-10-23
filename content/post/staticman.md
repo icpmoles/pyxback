@@ -90,3 +90,8 @@ https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<
 
 > (Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
 
+Save.
+
+## How to manage comments
+
+Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunatelly you need the `placeholder` folder to avoid breaking the website.
