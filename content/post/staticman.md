@@ -78,7 +78,7 @@ Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the url
 
 ## Configure Hugo
 
-Open your repository with all your Hugo/Pyxill2 files and edit your config.toml file.
+Open your repository with all your Hugo/Pyxill2 files and edit your `config.toml` file.
 
 In the `[params]` section comment out (delete the hash character) the `staticman_api` variable and change the value to:
 
@@ -88,4 +88,4 @@ https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<
 
 > (Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
 
-Now to enable to register your comment open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments`. A confirmation will appear for only the first time.
+Now to enable to register your comment open a webpage and type ```<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments```. A confirmation will appear for only the first time.
