@@ -33,6 +33,8 @@ canonifyURLs= true
   banner= "/banner.png"
   staticman_api = "https://staticman-tutorial-hugo.herokuapp.com/v2/entry/IcpMoles/pyxback/main/comments" #Add staticman API URL to enable staticman comments
  #  RssUrl =  "https://example.com/rss"
+  google_analytics_id = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"
+  flattr_id = "e0v7jk"
   
 [author]
   name = "Author"
