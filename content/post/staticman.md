@@ -52,9 +52,9 @@ Open it and copy the section made by:
 
 {{< highlight conf "linenos=table">}}
 
-\-----BEGIN RSA PRIVATE KEY-----
+-----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
-\-----END RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
 
 {{< / highlight>}}
 
