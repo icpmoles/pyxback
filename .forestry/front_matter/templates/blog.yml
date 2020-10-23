@@ -37,3 +37,5 @@ fields:
   label: Table of Contents
   default: true
   description: Shows a menu with all the subsections of the article
+pages:
+- content/post/staticman.md
