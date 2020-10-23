@@ -14,7 +14,7 @@ How to setup your comments
 
 <!--more-->
 
-## Generating Private Access Token
+## Generate Private Access Token
 
 Head to Github and on Settings -> Developer Settings -> Personale Access Tokens and click [Generate New Token](https://github.com/settings/tokens/new).
 
@@ -66,7 +66,7 @@ Go to Settings -> Config Vars and type the following fields:
 
 `NODE_ENV` = `production`
 
-`GITHUB_TOKEN` = [(Private Access Token from before)](#deploy-on-heroku)
+`GITHUB_TOKEN` = [(Private Access Token from before)](#generate-private-access-token)
 
 `RSA_PRIVATE_KEY` = [(Private Key from before)](#generate-private-key)
 
