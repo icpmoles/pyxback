@@ -10,20 +10,12 @@ sections:
   create: all
   match: "*"
 - type: directory
-  path: content/uploads
-  label: Uploads
-  create: all
-  match: "**/*"
-- type: directory
   path: content/post
   label: Post
   create: all
   match: "**/*"
-- type: directory
-  path: content/archive
-  label: Archive
-  create: all
-  match: "**/*"
+  templates:
+  - blog
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
