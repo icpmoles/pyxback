@@ -13,8 +13,8 @@ pygmentsStyle="dracula"
 pygmentsCodefences=true
 pygmentsOptions="linenos=false"
 Paginate= 10
-relativeURLs = false
-canonifyURLs= true
+relativeURLs = true
+canonifyURLs= false
 [indexes]
   category = "categories"
   tag = "tags"
