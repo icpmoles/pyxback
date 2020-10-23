@@ -14,9 +14,7 @@ toc: true
 banner: ''
 
 ---
-How to setup your comments
-
-<!--more-->
+How to setup your comments <!--more-->
 
 ## Generate Private Access Token
 
@@ -48,7 +46,7 @@ From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem
 
 ![](/uploads/save-session.png)
 
-A .txt file is going to be downloaded. 
+A .txt file is going to be downloaded.
 
 ![](/uploads/txt.png)
 
@@ -56,9 +54,9 @@ Open it and copy the section made by:
 
 {{< highlight http "linenos=table">}}
 
------BEGIN RSA PRIVATE KEY-----
+\-----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
------END RSA PRIVATE KEY-----
+\-----END RSA PRIVATE KEY-----
 
 {{< / highlight>}}
 
@@ -80,7 +78,10 @@ Go to Settings -> Config Vars and type the following fields:
 
 Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
 
-Now to enable to register your comment open a webpage and type ```<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments```. A confirmation will appear for only the first time.
+Now to enable to register your comment open a webpage and type ```http
+<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments```
+
+A confirmation will appear for only the first time.
 
 ## Configure Hugo
 
