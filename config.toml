@@ -20,6 +20,7 @@ canonifyURLs= true
   tag = "tags"
 
 [params]
+  hostName = "https://pyxill2.netlify.com"
   toc= true
   absURL= "https://pyxill2.netlify.com"
   mainSections = ["post"]
