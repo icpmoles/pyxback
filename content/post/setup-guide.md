@@ -3,6 +3,8 @@ title: Setup Guide
 author: Iacopo Moles
 date: 2020-10-22T13:51:36.000+00:00
 tags:
+- CMS
+- Forestry
 - setup
 - pyxill
 - Hugo
@@ -99,4 +101,3 @@ Now head over to Settings -> General -> Url and copy your website URL from Netli
 In the same page, in the Project Paths section set Admin Path as `/static/admin` an press Deploy Admin.
 
 Noy you can access Forestry by going to `<yoursite>.netlify.com/admin`
-
