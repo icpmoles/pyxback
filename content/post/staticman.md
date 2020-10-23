@@ -40,7 +40,7 @@ At the end of the setup you can continue on Manage App.
 
 ## Generate Private Key
 
-From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session.
+From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session. [_linux]
 
 ![](/uploads/command-pem.png)
 
@@ -54,9 +54,9 @@ Open it and copy the section made by:
 
 {{< highlight http "linenos=table">}}
 
-\-----BEGIN RSA PRIVATE KEY-----
+-----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
-\-----END RSA PRIVATE KEY-----
+-----END RSA PRIVATE KEY-----
 
 {{< / highlight>}}
 
@@ -103,3 +103,5 @@ Save.
 ## How to manage comments
 
 Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunatelly you need the `placeholder` folder to avoid breaking the website.
+
+[_linux]: Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊.
