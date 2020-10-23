@@ -11,7 +11,7 @@ tags:
 - comments
 latex: false
 toc: true
-banner: ''
+banner: "/uploads/static-sites-generator.png"
 
 ---
 How to setup your comments <!--more-->
