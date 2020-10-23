@@ -3,15 +3,16 @@ title: Staticman
 author: Iacopo Moles
 date: 2020-10-22T23:22:07.833+00:00
 tags:
-  - GitHub
-  - setup
-  - configuration
-  - forestry
-  - tutorial
-  - comments
-banner: ""
+- GitHub
+- setup
+- configuration
+- forestry
+- tutorial
+- comments
 latex: false
 toc: true
+banner: ''
+
 ---
 How to setup your comments <!--more-->
 
@@ -39,7 +40,7 @@ At the end of the setup you can continue on Manage App.
 
 ## Generate Private Key
 
-From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session. [_linux]
+From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session. [^linux]
 
 ![](/uploads/command-pem.png)
 
@@ -101,6 +102,6 @@ Save.
 
 ## How to manage comments
 
-Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunatelly you need the `placeholder` folder to avoid breaking the website.
+Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunately you need the `placeholder` folder to avoid breaking the website.
 
 [^linux]: Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊.
