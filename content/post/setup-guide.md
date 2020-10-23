@@ -64,7 +64,7 @@ Now go to  Site Settings -> Identity -> General -> Site Details and you can chan
 
 ![](/uploads/name-2.png)
 
-Now you can edit your blog content by heading to: `yoursite.netlify.com/netlify`
+Now you can edit your blog content by heading to: `<yoursite>.netlify.com/netlify`
 
 ![](/uploads/cms1.png)
 
@@ -95,3 +95,8 @@ Then after being logged in select the repository you made at the initial steps o
 Now head over to Settings -> General -> Url and copy your website URL from Netlify.
 
 ![](/uploads/url-set.png)
+
+In the same page, in the Project Paths section set Admin Path as `/static/admin` an press Deploy Admin.
+
+Noy you can access Forestry by going to `<yoursite>.netlify.com/admin`
+
