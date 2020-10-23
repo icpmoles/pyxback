@@ -32,18 +32,19 @@ At the end of the setup you can continue on Manage App.
 
 ## Generate Private Key
 
-From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session. 
+From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session.
 
 A .txt file is going to be downloaded. Open it and copy the section made by:
 
-```conf
+{{< highlight conf "linenos=table">}}
+
 -----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
 -----END RSA PRIVATE KEY-----
-```
+
+{{< / highlight>}}
 
 You will need it later.
-
 
 ## Configure the environment variables
 
@@ -55,7 +56,7 @@ Go to Settings -> Config Vars and type the following fields:
 
 `RSA_PRIVATE_KEY` = [(Private Key from before)](#generate-private-key)
 
-## Check if it works 
+## Check if it works
 
 Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
 
@@ -66,5 +67,9 @@ Open your repository with all your Hugo/Pyxill2 files and edit your config.toml 
 In the `[params]` section comment out (delete the hash character) the `staticman_api` variable and change the value to:
 
 ```http
-https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/master/comments
+https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/main/comments
 ```
+
+(Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
+
+Now to enable to register your comment
