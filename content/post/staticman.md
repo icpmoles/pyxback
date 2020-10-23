@@ -57,4 +57,14 @@ Go to Settings -> Config Vars and type the following fields:
 
 ## Check if it works 
 
-Open a webpage and type `name-of-your-heroku-istance.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
+Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
+
+## Configure Hugo
+
+Open your repository with all your Hugo/Pyxill2 files and edit your config.toml file.
+
+In the `[params]` section comment out (delete the hash character) the `staticman_api` variable and change the value to:
+
+```http
+https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/master/comments
+```
