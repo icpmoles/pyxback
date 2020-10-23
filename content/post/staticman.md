@@ -50,7 +50,7 @@ A .txt file is going to be downloaded.
 
 Open it and copy the section made by:
 
-{{< highlight conf "linenos=table">}}
+{{< highlight http "linenos=table">}}
 
 -----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
@@ -88,7 +88,7 @@ In the `[params]` section comment out (delete the hash character) the `staticman
 https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/main/comments
 ```
 
-> (Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
+> (Pay attention to what branch you're submitting: main or master can cause errors if not filled correctly)
 
 Save.
 
