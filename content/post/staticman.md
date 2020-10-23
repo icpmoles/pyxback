@@ -70,6 +70,8 @@ Go to Settings -> Config Vars and type the following fields:
 
 `RSA_PRIVATE_KEY` = [(Private Key from before)](#generate-private-key)
 
+![](/uploads/config-vars.png)
+
 ## Check if it works
 
 Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the urlbar. Open it and a page with `Hello from Staticman version 3.0.0!` will be shown.
@@ -86,4 +88,4 @@ https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<
 
 > (Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
 
-Now to enable to register your comment open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments`. A confirmation will appear for the first time.
+Now to enable to register your comment open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments`. A confirmation will appear for only the first time.
