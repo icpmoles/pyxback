@@ -1,15 +1,16 @@
 ---
 title: Setup Guide
 author: Iacopo Moles
-date: 2020-10-22T13:51:36.000Z
+date: 2020-10-22T13:51:36.000+00:00
 tags:
-  - setup
-  - pyxill
-  - Hugo
-  - Netlify
-banner: ""
+- setup
+- pyxill
+- Hugo
+- Netlify
+banner: ''
 latex: false
 toc: true
+
 ---
 Tutorial on how to setup your blog to use this theme
 
@@ -66,3 +67,7 @@ Now you can edit your blog content by heading to: `yoursite.netlify.com/netlify`
 ![](/uploads/cms1.png)
 
 ![](/uploads/cms2.png)
+
+Once logged in you can use the CMS to manage your blog.
+
+![](/uploads/landing-cms.png)
