@@ -5,6 +5,14 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
+  path: data/comments
+  label: Comments
+  create: all
+  match: "**/*"
+  new_doc_ext: ".json"
+  templates:
+  - commento
+- type: directory
   path: content
   label: Pages
   create: all
