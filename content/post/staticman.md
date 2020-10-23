@@ -70,6 +70,6 @@ In the `[params]` section comment out (delete the hash character) the `staticman
 https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/main/comments
 ```
 
-(Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
+> (Pay attention to what branch you're submitting: main or master can make cause errors if not filled correctly)
 
-Now to enable to register your comment
+Now to enable to register your comment open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments`. A confirmation will appear for the first time.
