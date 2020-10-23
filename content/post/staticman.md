@@ -3,6 +3,10 @@ title: Staticman
 author: Iacopo Moles
 date: 2020-10-22T23:22:07.833+00:00
 tags:
+- GitHub
+- setup
+- configuration
+- forestry
 - tutorial
 - comments
 latex: false
