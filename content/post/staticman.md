@@ -81,7 +81,6 @@ Open a webpage and type `<name-of-your-heroku-istance>.herokuapp.com` in the url
 Now to enable to register your comment open a webpage and type 
 
 ```http
-
 <name-of-your-heroku-istance>.herokuapp.com/v2/connect/<github_username>/<github_repo>/main/comments
 
 ```
