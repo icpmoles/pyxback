@@ -6,7 +6,7 @@ command = "hugo --gc --minify"
 HUGO_VERSION = "0.76.5"
 HUGO_ENV = "production"
 HUGO_ISNETFLIFY = "true"
-HUGO_BASEURL = "/"
+HUGO_BASEURL = "https://pyxill2.netlify.app/"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
