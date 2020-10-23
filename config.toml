@@ -30,7 +30,7 @@ canonifyURLs= true
   description = "boring randomness"
   author = "Iacopo Moles"
   banner= "/banner.png"
-  staticman_api = "https://staticman-tutorial-hugo.herokuapp.com/v2/entry/IcpMoles/pyxback/master/comments" #Add staticman API URL to enable staticman comments
+  staticman_api = "https://staticman-tutorial-hugo.herokuapp.com/v2/entry/IcpMoles/pyxback/main/comments" #Add staticman API URL to enable staticman comments
  #  RssUrl =  "https://example.com/rss"
   
 [author]
