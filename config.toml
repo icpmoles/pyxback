@@ -35,7 +35,8 @@ canonifyURLs= true
  #  RssUrl =  "https://example.com/rss"
   google_analytics_id = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"
   flattr_id = "e0v7jk"
-  
+  payment_pointer = "$ilp.uphold.com/kk3ZPeDi34nP"
+
 [author]
   name = "Author"
 	
