@@ -9,3 +9,4 @@ title = "Some N.B. about this theme"
 toc = false
 
 +++
+As you may have noticed this website lacks some functionality.
