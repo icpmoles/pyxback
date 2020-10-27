@@ -15,6 +15,9 @@ pygmentsOptions="linenos=false"
 Paginate= 10
 relativeURLs = false
 canonifyURLs= true
+enableEmoji = true
+
+
 [indexes]
   category = "categories"
   tag = "tags"
