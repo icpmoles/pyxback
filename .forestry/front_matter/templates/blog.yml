@@ -38,4 +38,5 @@ fields:
   default: true
   description: Shows a menu with all the subsections of the article
 pages:
+- content/post/some-n.b.about-this-theme.md
 - content/post/staticman.md
