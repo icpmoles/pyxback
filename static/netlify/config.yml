@@ -19,5 +19,5 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'list', required: false, allow_add: true  }
       - { label: 'Banner', name: 'banner', widget: 'file', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Latex', name: 'latex', widget: 'boolean', default: false }
+      - { label: 'Math Rendering', name: 'math', widget: 'boolean', default: false }
       - { label: 'Table of Contents', name: 'toc', widget: 'boolean', default: false }
