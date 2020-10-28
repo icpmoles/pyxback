@@ -4,7 +4,7 @@ banner = "/uploads/1_-_hero_image_xmab9m.jpg"
 date = 2020-10-22T06:40:05Z
 math = true
 tags = ["MathJax", "configuration", "syntax", "latex", "Katex"]
-title = "Math rendering in Pyxill 2 use"
+title = "Math rendering in Pyxill 2"
 toc = true
 
 +++
