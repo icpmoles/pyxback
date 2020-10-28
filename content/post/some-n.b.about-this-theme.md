@@ -8,4 +8,8 @@ title = "Some N.B. about this theme"
 toc = false
 
 +++
-As you may have noticed this website lacks some functionality.
+As you may have noticed this website lacks some functionality
+
+<!--more-->
+
+This is because AMP is like developing and maintaining a separate website.
