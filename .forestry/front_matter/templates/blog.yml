@@ -28,9 +28,9 @@ fields:
 - type: file
   name: banner
   label: banner
-- name: latex
+- name: math
   type: boolean
-  label: LAtex
+  label: Math rendering
   default: false
 - name: toc
   type: boolean
