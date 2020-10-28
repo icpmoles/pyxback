@@ -23,6 +23,7 @@ enableEmoji = true
   tag = "tags"
 
 [params]
+  math_library="katex" #you can choose between katex or mathjax depending on your needs
   hostName = "https://pyxill2.netlify.com"
   toc= true
   absURL= "https://pyxill2.netlify.com"
@@ -33,7 +34,7 @@ enableEmoji = true
   paginate = 10
   description = "boring randomness"
   author = "Iacopo Moles"
-  banner= "/banner.png"
+  banner= "banner.png"
   staticman_api = "https://staticman-tutorial-hugo.herokuapp.com/v2/entry/IcpMoles/pyxback/main/comments" #Add staticman API URL to enable staticman comments
  #  RssUrl =  "https://example.com/rss"
   google_analytics_id = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"

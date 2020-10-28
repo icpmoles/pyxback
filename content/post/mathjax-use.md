@@ -2,9 +2,9 @@
 author = "Iacopo Moles"
 banner = "/uploads/1_-_hero_image_xmab9m.jpg"
 date = 2020-10-22T06:40:05Z
-latex = true
-tags = ["MathJax", "configuration", "syntax", "latex"]
-title = "MathJax use"
+math = true
+tags = ["MathJax", "configuration", "syntax", "latex", "Katex"]
+title = "Math rendering in Pyxill 2 use"
 toc = true
 
 +++
@@ -12,16 +12,21 @@ Syntax and configuration to render math elements with the theme
 
 <!--more-->
 
-## Enable MathJax
+## Enable Math Rendering
 
 In your FrontMatter for the page set
 
 {{< highlight C "linenos=true">}}
 
-latex=true
+math=true
 
 {{< / highlight>}}
 
+
+## Choose your math library
+
+In your configuration file you can switch between `mathjax` or `katex` as your favourite math rendering library by changing the string value of `math_library` in the `params` section.
+ 
 ## Insert math code in your post
 
 You can use the standard Latex syntax for inline mode and display mode:
