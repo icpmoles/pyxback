@@ -40,6 +40,12 @@ enableEmoji = true
   google_analytics_id = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"
   flattr_id = "e0v7jk"
   payment_pointer = "$ilp.uphold.com/kk3ZPeDi34nP"
+  google_analytics_js = false
+  js_privacy = true #uses locally hosted libraries instead of using their CDN
+  footer_links = true #enables a footer navigation bar
+  custom_navbar = true #makes the main navbar editable
+  custom_footbar = true #maked the footbare editable 
+
 
 [author]
   name = "Author"
@@ -87,4 +93,49 @@ enableEmoji = true
       unsafe = false
       xhtml = false
       
+
+[menu]
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = -90
+
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = -100
+
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = -120
+
+  [[menu.footer]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+    weight = -90
+
+  [[menu.footer]]
+    name = " | "
+    weight = -95
+
+  [[menu.footer]]
+    name = "Credits"
+    url = "/credits/"
+    weight = -100
+
+  [[menu.footer]]
+    name = "  | "
+    weight = -105
+
+  [[menu.footer]]
+    name = "Admin"
+    url = "/netlify/"
+    weight = -110
 
