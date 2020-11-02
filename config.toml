@@ -115,14 +115,7 @@ enableEmoji = true
     name = "Tags"
     url = "/tags/"
     weight = -120
-    
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
+ 
 
   [[menu.footer]]
     name = "Privacy Policy"
@@ -147,3 +140,10 @@ enableEmoji = true
     url = "/netlify/"
     weight = -110
 
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
