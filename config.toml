@@ -115,6 +115,14 @@ enableEmoji = true
     name = "Tags"
     url = "/tags/"
     weight = -120
+    
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
 
   [[menu.footer]]
     name = "Privacy Policy"
