@@ -23,6 +23,8 @@ enableEmoji = true
   tag = "tags"
 
 [params]
+  avatar="local" #you can choose between graveyard, libravatar or local
+  admin_hash="d959b6db5935acae2c0aeac2956f2c13" #in case of local
   math_library="katex" #you can choose between katex or mathjax depending on your needs
   hostName = "https://pyxill2.netlify.com"
   toc= true
