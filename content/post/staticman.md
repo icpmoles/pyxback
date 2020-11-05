@@ -97,9 +97,9 @@ In the `[params]` section comment out (delete the hash character) the `staticman
 https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/main/comments
 ```
 
-{{ quote red}}
+{{< quote red>}}
 (Pay attention to what branch you're submitting: main or master can cause errors if not filled correctly)
-{{\quote}}
+{{<quote>}}
 
 Save.
 
