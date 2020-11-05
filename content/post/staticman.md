@@ -99,12 +99,17 @@ https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<
 
 {{< quote red>}}
 (Pay attention to what branch you're submitting: main or master can cause errors if not filled correctly)
-{{<quote>}}
+{{</quote>}}
 
 Save.
 
 ## How to manage comments
 
 Comments are saved in folders based on the various blog posts. You can delete or edit theme in the `/data/comments/` folder of your Hugo config. Unfortunately you need the `placeholder` folder to avoid breaking the website.
+
+## Avatar provider
+
+You can choose between Gravatar (faster, more widespread) or Libravatar (more privacy friendly), just set `params.avatar` to `gravatar`, `libravatar` or `avatar` if you want to use a static image (place it as `avatar.png` under the `static` directory, better if it's 100x100).
+
 
 [^linux]: Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊.
