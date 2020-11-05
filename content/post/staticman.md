@@ -98,7 +98,7 @@ https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<
 ```
 
 {{< quote red>}}
-(Pay attention to what branch you're submitting: main or master can cause errors if not filled correctly)
+Pay attention to which branch you're submitting: main or master can cause errors if not filled correctly.
 {{</ quote >}}
 
 Save.
