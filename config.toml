@@ -123,24 +123,19 @@ enableEmoji = true
     name = "Privacy Policy"
     url = "/privacy-policy/"
     weight = -90
-
-  [[menu.footer]]
-    name = " | "
-    weight = -95
+    pre=""
 
   [[menu.footer]]
     name = "Credits"
     url = "/credits/"
     weight = -100
-
-  [[menu.footer]]
-    name = "  | "
-    weight = -105
+    pre=" | "
 
   [[menu.footer]]
     name = "Admin"
     url = "/netlify/"
     weight = -110
+    pre=" | "
 
 [services]
 
