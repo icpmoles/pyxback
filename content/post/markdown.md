@@ -3,7 +3,7 @@ author = "Iacopo Moles"
 banner = "/uploads/gohugoio-card.png"
 date = 2020-10-22T05:31:59Z
 latex = false
-tags = ["syntax", "markdown", "guide", "manual"]
+tags = ["pyxill2", "code block", "highlight", "code", "quote", "syntax", "markdown", "guide", "manual"]
 title = "Markdown"
 toc = true
 
@@ -23,16 +23,9 @@ _Italic Text_
 _Italic Text_
 {{< / highlight>}}
 
-> Quotation section
->
-> > With subsection
-
+`Inline code section`
 {{< highlight markdown>}}
-
-> Quotation section
->
-> > With subsection
-
+`Inline code section`
 {{< / highlight>}}
 
 ## Headings
@@ -141,7 +134,7 @@ your text [^name of your footnote] ... your other text
 
 .
 
-(end of the page)
+(everywhere in your page)
 
 [^name of your footnote]: description of your footnote
 
@@ -150,3 +143,33 @@ your text [^name of your footnote] ... your other text
 [^markdown escape]: To avoid Hugo CMS from rendering your shortcodes use [this guide](https://liatas.com/posts/escaping-hugo-shortcodes/)
 
 [^wiki]: The number things you see on every boring book or in Wikipedia
+
+## Quote blocks
+
+> Example of quoteblock
+>
+> > Nested Block
+
+{{< highlight markdown "linenos=table">}}
+
+> Example of quoteblock
+>
+> > Nested Block
+
+{{< /highlight>}}
+
+{{<quote green>}} Quote with green accent {{</quote>}}
+
+{{< highlight markdown "linenos=table">}}
+
+{{</* quote green */>}} Quote with green accent {{</* /quote */>}}
+
+{{< /highlight>}}
+
+The custom quote shortcode supports 5 colors:
+
+1. red
+2. green
+3. yellow
+4. orange
+5. purple
