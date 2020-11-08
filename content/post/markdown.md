@@ -23,16 +23,9 @@ _Italic Text_
 _Italic Text_
 {{< / highlight>}}
 
-> Quotation section
->
-> > With subsection
-
+`Inline code section`
 {{< highlight markdown>}}
-
-> Quotation section
->
-> > With subsection
-
+`Inline code section`
 {{< / highlight>}}
 
 ## Headings
