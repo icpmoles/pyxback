@@ -110,7 +110,7 @@ fmt.Println("hello world")
 
 {{< /highlight>}}
 
-was produced by: [^markdown escape]
+was produced by: \[^markdown escape\]
 
 {{< highlight markdown "linenos=table">}}
 
@@ -129,7 +129,7 @@ fmt.Println("hello world")
 
 ## Footnotes
 
-To use footnotes[^wiki]
+To use footnotes\[^wiki\]
 
 {{< highlight markdown "linenos=table">}}
 
@@ -147,18 +147,20 @@ your text \[^name of your footnote\] ... your other text
 
 {{< / highlight>}}
 
-[^markdown escape]: To avoid Hugo CMS from rendering your shortcodes use [this guide](https://liatas.com/posts/escaping-hugo-shortcodes/)
+\[^markdown escape\]: To avoid Hugo CMS from rendering your shortcodes use [this guide](https://liatas.com/posts/escaping-hugo-shortcodes/)
 
-[^wiki]: The number things you see on every boring book or in Wikipedia
+\[^wiki\]: The number things you see on every boring book or in Wikipedia
 
 ## Quote blocks
 
 > Example of quoteblock
+>
 > > Nested Block
 
 {{< highlight markdown "linenos=table">}}
 
 > Example of quoteblock
+>
 > > Nested Block
 
 {{< /highlight>}}
@@ -171,3 +173,10 @@ your text \[^name of your footnote\] ... your other text
 
 {{< /highlight>}}
 
+The custom quote shortcode supports 5 colors:
+
+1. red
+2. green
+3. yellow
+4. orange
+5. purple
