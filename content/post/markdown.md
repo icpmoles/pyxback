@@ -3,7 +3,7 @@ author = "Iacopo Moles"
 banner = "/uploads/gohugoio-card.png"
 date = 2020-10-22T05:31:59Z
 latex = false
-tags = ["syntax", "markdown", "guide", "manual"]
+tags = ["pyxill2", "code block", "highlight", "code", "quote", "syntax", "markdown", "guide", "manual"]
 title = "Markdown"
 toc = true
 
