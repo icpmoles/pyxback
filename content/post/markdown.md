@@ -133,7 +133,7 @@ To use footnotes\[^wiki\]
 
 {{< highlight markdown "linenos=table">}}
 
-your text \[^name of your footnote\] ... your other text
+your text [^name of your footnote] ... your other text
 
 .
 
@@ -143,13 +143,13 @@ your text \[^name of your footnote\] ... your other text
 
 (everywhere in your page)
 
-\[^name of your footnote\]: description of your footnote
+[^name of your footnote]: description of your footnote
 
 {{< / highlight>}}
 
-\[^markdown escape\]: To avoid Hugo CMS from rendering your shortcodes use [this guide](https://liatas.com/posts/escaping-hugo-shortcodes/)
+[^markdown escape]: To avoid Hugo CMS from rendering your shortcodes use [this guide](https://liatas.com/posts/escaping-hugo-shortcodes/)
 
-\[^wiki\]: The number things you see on every boring book or in Wikipedia
+[^wiki]: The number things you see on every boring book or in Wikipedia
 
 ## Quote blocks
 
