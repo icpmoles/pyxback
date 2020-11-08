@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on Pyxill 2</title>
+    <link>http://474379221658.ngrok.io/archives/</link>
+    <description>Recent content in Archives on Pyxill 2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language><atom:link href="http://474379221658.ngrok.io/archives/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts Archive</title>
+      <link>http://474379221658.ngrok.io/archives/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://474379221658.ngrok.io/archives/post/</guid>
+      <description>This page contains an archive of all posts.</description>
+    </item>
+    
+  </channel>
+</rss>

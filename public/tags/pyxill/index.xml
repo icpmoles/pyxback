@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pyxill on Pyxill 2</title>
+    <link>http://474379221658.ngrok.io/tags/pyxill/</link>
+    <description>Recent content in pyxill on Pyxill 2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    <lastBuildDate>Thu, 22 Oct 2020 13:51:36 +0000</lastBuildDate><atom:link href="http://474379221658.ngrok.io/tags/pyxill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup Guide</title>
+      <link>http://474379221658.ngrok.io/post/setup-guide/</link>
+      <pubDate>Thu, 22 Oct 2020 13:51:36 +0000</pubDate>
+      
+      <guid>http://474379221658.ngrok.io/post/setup-guide/</guid>
+      <description>&lt;p&gt;Tutorial on how to setup your blog to use this theme&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

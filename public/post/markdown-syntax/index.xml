@@ -1,0 +1,16 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Pyxill 2 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://474379221658.ngrok.io/post/markdown-syntax/</link>
+    <language>en-en</language>
+    <author>Author</author>
+    
+    <updated>Mon, 11 Mar 2019 00:00:00 UTC</updated>
+    <image>
+    <url>http://474379221658.ngrok.io/favicon.png</url>
+    </image>
+    
+  </channel>
+</rss>
+

@@ -1,0 +1,743 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Pyxill 2 </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://474379221658.ngrok.io/post/</link>
+    <language>en-en</language>
+    <author>Author</author>
+    
+    <updated>Tue, 27 Oct 2020 09:30:43 UTC</updated>
+    <image>
+    <url>http://474379221658.ngrok.io/favicon.png</url>
+    </image>
+    
+    <item>
+      <title>Some N.B. about this theme</title>
+      <link>http://474379221658.ngrok.io/post/some-n.b.about-this-theme/</link>
+      <pubDate>Tue, 27 Oct 2020 09:30:43 UTC</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/some-n.b.about-this-theme/</guid>
+      <description> &lt;p&gt;As you may have noticed this website lacks some functionality&lt;/p&gt;
+&lt;p&gt;This is because AMP is like developing and maintaining a separate website. For now I will focus on the main website and in future when the main site is stable and complete enough I will try to move some stuff to the AMP version too. Hopefully Hugo will fix some bugs (like the &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/7160&#34;&gt;#7160&lt;/a&gt;, they have delayed the development of the theme and that causes problems in the RSS too).&lt;/p&gt;
+&lt;p&gt;You may have noticed that the original theme has multilingual support but this version doesn&amp;rsquo;t. I plan to implement it in the future.&lt;/p&gt;
+&lt;p&gt;I also plan to implement metadata stripping from media files and maybe resize/compression too when Hugo starts having a better documentation for this stuff.&lt;/p&gt; </description>
+    </item>
+    
+    <item>
+      <title>Staticman</title>
+      <link>http://474379221658.ngrok.io/post/staticman/</link>
+      <pubDate>Thu, 22 Oct 2020 23:22:07 &#43;0000</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/staticman/</guid>
+      <description> &lt;p&gt;How to setup your comments&lt;/p&gt;
+&lt;h2 id=&#34;generate-private-access-token&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#generate-private-access-token&#34;&gt;# &lt;/a&gt;Generate Private Access Token &lt;/h2&gt;
+&lt;p&gt;Head to Github and on Settings -&amp;gt; Developer Settings -&amp;gt; Personale Access Tokens and click &lt;a href=&#34;https://github.com/settings/tokens/new&#34;&gt;Generate New Token&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Write a placeholder name and select the repo and user subsections. Then press Generate token.&lt;/p&gt;
+&lt;p&gt;Copy the new token generated and save it somewhere. Keep in mind that you can&amp;rsquo;t recover it in future.&lt;/p&gt;
+&lt;h2 id=&#34;deploy-on-heroku&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#deploy-on-heroku&#34;&gt;# &lt;/a&gt;Deploy on Heroku &lt;/h2&gt;
+&lt;p&gt;Head over to the GitHub &lt;a href=&#34;https://github.com/eduardoboucas/staticman/&#34;&gt;project page&lt;/a&gt; and click the purple button (or in alternative &lt;a href=&#34;https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Feduardoboucas%2Fstaticman&amp;amp;template=https%3A%2F%2Fgithub.com%2Feduardoboucas%2Fstaticman&#34;&gt;click here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;You will land on a page where a name for your project is asked. Type whatever name you would like and confirm.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/heroku-landing.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/building.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;At the end of the setup you can continue on Manage App.&lt;/p&gt;
+&lt;h2 id=&#34;generate-private-key&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#generate-private-key&#34;&gt;# &lt;/a&gt;Generate Private Key &lt;/h2&gt;
+&lt;p&gt;From the toolbar click More -&amp;gt; Run Console and type &lt;code&gt;openssl genrsa -out key.pem &amp;amp;&amp;amp; cat key.pem&lt;/code&gt; and then press Save Session. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/command-pem.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/save-session.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;A .txt file is going to be downloaded.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/txt.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Open it and copy the section made by:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-http&#34; data-lang=&#34;http&#34;&gt;-----BEGIN RSA PRIVATE KEY-----
+(a long alphanumerical text)
+-----END RSA PRIVATE KEY-----&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You will need it later.&lt;/p&gt;
+&lt;h2 id=&#34;configure-the-environment-variables&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#configure-the-environment-variables&#34;&gt;# &lt;/a&gt;Configure the environment variables &lt;/h2&gt;
+&lt;p&gt;Go to Settings -&amp;gt; Config Vars and type the following fields:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;NODE_ENV&lt;/code&gt; = &lt;code&gt;production&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GITHUB_TOKEN&lt;/code&gt; = &lt;a href=&#34;#generate-private-access-token&#34;&gt;(Private Access Token from before)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;RSA_PRIVATE_KEY&lt;/code&gt; = &lt;a href=&#34;#generate-private-key&#34;&gt;(Private Key from before)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/config-vars.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;check-if-it-works&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#check-if-it-works&#34;&gt;# &lt;/a&gt;Check if it works &lt;/h2&gt;
+&lt;p&gt;Open a webpage and type &lt;code&gt;&amp;lt;name-of-your-heroku-istance&amp;gt;.herokuapp.com&lt;/code&gt; in the urlbar. Open it and a page with &lt;code&gt;Hello from Staticman version 3.0.0!&lt;/code&gt; will be shown.&lt;/p&gt;
+&lt;p&gt;Now to enable to register your comment open a webpage and type&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-http&#34; data-lang=&#34;http&#34;&gt;&amp;lt;name-of-your-heroku-istance&amp;gt;.herokuapp.com/v2/connect/&amp;lt;github_username&amp;gt;/&amp;lt;github_repo&amp;gt;/main/comments
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A confirmation will appear for only the first time.&lt;/p&gt;
+&lt;h2 id=&#34;configure-hugo&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#configure-hugo&#34;&gt;# &lt;/a&gt;Configure Hugo &lt;/h2&gt;
+&lt;p&gt;Open your repository with all your Hugo/Pyxill2 files and edit your &lt;code&gt;config.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;In the &lt;code&gt;[params]&lt;/code&gt; section comment out (delete the hash character) the &lt;code&gt;staticman_api&lt;/code&gt; variable and change the value to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-http&#34; data-lang=&#34;http&#34;&gt;https://&amp;lt;name-of-your-heroku-istance&amp;gt;.herokuapp.com/v2/entry/&amp;lt;github_username&amp;gt;/&amp;lt;github_repo&amp;gt;/main/comments
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote style=&#34;border-left-color:var(--red);&#34;&gt;
+
+Pay attention to which branch you&#39;re submitting: main or master can cause errors if not filled correctly.
+
+&lt;/blockquote&gt;
+&lt;p&gt;Save.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-manage-comments&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#how-to-manage-comments&#34;&gt;# &lt;/a&gt;How to manage comments &lt;/h2&gt;
+&lt;p&gt;Comments are saved in folders based on the various blog posts. You can delete or edit theme in the &lt;code&gt;/data/comments/&lt;/code&gt; folder of your Hugo config. Unfortunately you need the &lt;code&gt;placeholder&lt;/code&gt; folder to avoid breaking the website.&lt;/p&gt;
+&lt;h2 id=&#34;avatar-provider&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#avatar-provider&#34;&gt;# &lt;/a&gt;Avatar provider &lt;/h2&gt;
+&lt;p&gt;You can choose between Gravatar (faster, more widespread) or Libravatar (more privacy friendly), just set &lt;code&gt;params.avatar&lt;/code&gt; to &lt;code&gt;gravatar&lt;/code&gt;, &lt;code&gt;libravatar&lt;/code&gt; or &lt;code&gt;avatar&lt;/code&gt; if you want to use a static image (place it as &lt;code&gt;avatar.png&lt;/code&gt; under the &lt;code&gt;static&lt;/code&gt; directory, better if it&amp;rsquo;s 100x100).&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Yes, you can use your PC if you have the software already installed if you like, but this is more easy for a general pourpose tutorial 😊. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt; </description>
+    </item>
+    
+    <item>
+      <title>Setup Guide</title>
+      <link>http://474379221658.ngrok.io/post/setup-guide/</link>
+      <pubDate>Thu, 22 Oct 2020 13:51:36 &#43;0000</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/setup-guide/</guid>
+      <description> &lt;p&gt;Tutorial on how to setup your blog to use this theme&lt;/p&gt;
+&lt;h2 id=&#34;netlify&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#netlify&#34;&gt;# &lt;/a&gt;Netlify &lt;/h2&gt;
+&lt;h3 id=&#34;initial-setup&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#initial-setup&#34;&gt;# &lt;/a&gt;Initial setup &lt;/h3&gt;
+&lt;p&gt;You can deploy a blog automatically by using the automatic setup by &lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/IcpMoles/pyxback&amp;amp;stack=hugo&#34;&gt;clicking here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Once signed up or logged in Netlify, linked your GitHub or GitLab account, you&amp;rsquo;re going to be asked a name for the repository where Netlify will save your configuration files and all the posts&#39; archive. Choose a name and keep in mind that this repository can be hidden later on.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/landing.png&#34; alt=&#34;Netlify Landing &#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Congrats, your blog is up and running.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/dashboard.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-netlifycms&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#setting-up-netlifycms&#34;&gt;# &lt;/a&gt;Setting up NetlifyCMS &lt;/h3&gt;
+&lt;p&gt;Now head over to your Site Settings -&amp;gt; Identity and enable the Identiy manager.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/identity.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now go to  Site Settings -&amp;gt; Identity -&amp;gt; Services and enable the Git Gateway.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/gateway1.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now go to  Site Settings -&amp;gt; Identity -&amp;gt; Registration and in the Registration Preferences set to Invite Only.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/invite-only.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now go to  Site Settings -&amp;gt; Identity -&amp;gt; Emails and change all Path to template of the various subsections to &lt;code&gt;/netlify&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/template-path.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now you can invite users (and yourself) to edit your website by using their emails by going to Identity and clicking Invite Users.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/inviting.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;You can enable other service providers too in Site Settings -&amp;gt; Identity -&amp;gt; Registration  -&amp;gt; External Providers and by adding them using the default configuration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/provider.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/provider2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now go to  Site Settings -&amp;gt; Identity -&amp;gt; General -&amp;gt; Site Details and you can change the random string assigned by Netlify to a more human friendly name for your website that you would like to see as your main url.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/name-1.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/name-2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now you can edit your blog content by heading to: &lt;code&gt;&amp;lt;yoursite&amp;gt;.netlify.com/netlify&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/cms1.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/cms2.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Once logged in you can use the CMS to manage your blog.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/landing-cms.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;forestry&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#forestry&#34;&gt;# &lt;/a&gt;Forestry &lt;/h2&gt;
+&lt;p&gt;Head over to &lt;a href=&#34;https://forestry.io/&#34;&gt;Forestry&lt;/a&gt; and signup/login with your favorite method.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/forest-landing.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;In the dashboard press Add Site. Select Hugo as your static site generator.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/hugo-select.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Then Github as your git provider.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/github-select.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Then after being logged in select the repository you made at the initial steps of Netlify and the main branch.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/branch-select.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Now head over to Settings -&amp;gt; General -&amp;gt; Url and copy your website URL from Netlify.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/url-set.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;In the same page, in the Project Paths section set Admin Path as &lt;code&gt;/static/admin&lt;/code&gt; an press Deploy Admin.&lt;/p&gt;
+&lt;p&gt;Noy you can access Forestry by going to &lt;code&gt;&amp;lt;yoursite&amp;gt;.netlify.com/admin&lt;/code&gt;&lt;/p&gt; </description>
+    </item>
+    
+    <item>
+      <title>External Shortcode</title>
+      <link>http://474379221658.ngrok.io/post/external-shortcode/</link>
+      <pubDate>Thu, 22 Oct 2020 13:49:04 UTC</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/external-shortcode/</guid>
+      <description> &lt;p&gt;Hugo supports custom elements to incorporate snippets from other services.&lt;/p&gt;
+&lt;h2 id=&#34;instagram&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#instagram&#34;&gt;# &lt;/a&gt;Instagram &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt; &lt;span style=&#34;color:#ff79c6&#34;&gt;instagram&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;BWNjjyYFxVx&lt;/span&gt; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;twitter&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#twitter&#34;&gt;# &lt;/a&gt;Twitter &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt; &lt;span style=&#34;color:#ff79c6&#34;&gt;tweet&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;877500564405444608&lt;/span&gt; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Renders as:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hugo 0.24 Released: Big archetype update + &lt;a href=&#34;https://twitter.com/Netlify?ref_src=twsrc%5Etfw&#34;&gt;@Netlify&lt;/a&gt; _redirects etc. file support&lt;a href=&#34;https://t.co/X94FmYDEZJ&#34;&gt;https://t.co/X94FmYDEZJ&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/gohugo?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#gohugo&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/spf13?ref_src=twsrc%5Etfw&#34;&gt;@spf13&lt;/a&gt; &lt;a href=&#34;https://twitter.com/bepsays?ref_src=twsrc%5Etfw&#34;&gt;@bepsays&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href=&#34;https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw&#34;&gt;June 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;vimeo&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#vimeo&#34;&gt;# &lt;/a&gt;Vimeo &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt; &lt;span style=&#34;color:#ff79c6&#34;&gt;vimeo&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;146022717&lt;/span&gt; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Renders as:&lt;/p&gt;
+
+
+
+
+
+
+&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;
+
+
+&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;a href=&#34;https://vimeo.com/1.46022717e&amp;#43;08&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
+
+
+&lt;img src=&#34;https://i.vimeocdn.com/video/544362910_295x166.jpg&#34; srcset=&#34;https://i.vimeocdn.com/video/544362910_295x166.jpg 1x, https://i.vimeocdn.com/video/544362910.jpg 2x&#34; alt=&#34;The Clock of the Long Now&#34;&gt;
+&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h2 id=&#34;gist&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#gist&#34;&gt;# &lt;/a&gt;Gist &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt; &lt;span style=&#34;color:#ff79c6&#34;&gt;gist&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;spf13&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;7896402&lt;/span&gt; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Renders as:&lt;/p&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;youtube&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#youtube&#34;&gt;# &lt;/a&gt;YouTube &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt; &lt;span style=&#34;color:#ff79c6&#34;&gt;youtube&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;w7Ft2ymGmfc&lt;/span&gt; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Renders as:&lt;/p&gt;
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;400&#34;
+  src=&#34;https://www.youtube-nocookie.com/embed/w7Ft2ymGmfc?color=white&amp;modestbranding&amp;rel=0&amp;playsinline&amp;showinfo=0&amp;controls=2&#34; 
+  frameborder=&#34;0&#34;
+  srcdoc=&#34;&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto }span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=https://www.youtube-nocookie.com/embed/w7Ft2ymGmfc?color=white&amp;modestbranding&amp;rel=0&amp;playsinline&amp;showinfo=0&amp;controls=2&amp;autoplay=1&gt;&lt;img src=https://img.youtube.com/vi/w7Ft2ymGmfc/hqdefault.jpg loading=lazy &gt;&lt;span&gt;▶&lt;/span&gt;&lt;/a&gt;&#34;
+  allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34;
+  allowfullscreen
+  loading=&#34;lazy&#34;
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt; </description>
+    </item>
+    
+    <item>
+      <title>Math rendering in Pyxill 2</title>
+      <link>http://474379221658.ngrok.io/post/mathjax-use/</link>
+      <pubDate>Thu, 22 Oct 2020 06:40:05 UTC</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/mathjax-use/</guid>
+      <description> &lt;p&gt;Syntax and configuration to render math elements with the theme&lt;/p&gt;
+&lt;h2 id=&#34;enable-math-rendering&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#enable-math-rendering&#34;&gt;# &lt;/a&gt;Enable Math Rendering &lt;/h2&gt;
+&lt;p&gt;In your FrontMatter for the page set&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-C&#34; data-lang=&#34;C&#34;&gt;math&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;choose-your-math-library&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#choose-your-math-library&#34;&gt;# &lt;/a&gt;Choose your math library &lt;/h2&gt;
+&lt;p&gt;In your configuration file you can switch between &lt;code&gt;mathjax&lt;/code&gt; or &lt;code&gt;katex&lt;/code&gt; as your favourite math rendering library by changing the string value of &lt;code&gt;math_library&lt;/code&gt; in the &lt;code&gt;params&lt;/code&gt; section.&lt;/p&gt;
+&lt;h2 id=&#34;insert-math-code-in-your-post&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#insert-math-code-in-your-post&#34;&gt;# &lt;/a&gt;Insert math code in your post &lt;/h2&gt;
+&lt;p&gt;You can use the standard Latex syntax for inline mode and display mode:&lt;/p&gt;
+&lt;p&gt;This code:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;When &lt;span style=&#34;color:#ff79c6&#34;&gt;\\&lt;/span&gt;(a &lt;span style=&#34;color:#ff79c6&#34;&gt;\\&lt;/span&gt;ne 0&lt;span style=&#34;color:#ff79c6&#34;&gt;\\&lt;/span&gt;), there are two solutions to &lt;span style=&#34;color:#ff79c6&#34;&gt;\\&lt;/span&gt;(ax&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;^&lt;/span&gt;2 + bx + c = 0&lt;span style=&#34;color:#ff79c6&#34;&gt;\\&lt;/span&gt;) and they are:&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;renders as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;...and they are: &lt;span style=&#34;color:#f1fa8c&#34;&gt;$$&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;x &lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt; {&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;b &lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;\pm&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;\sqrt&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;{b^&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;ac} &lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;\over&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#bd93f9&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;a}.&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;$$&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;renders as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;and they are: $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$&lt;/p&gt;
+&lt;/blockquote&gt; </description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://474379221658.ngrok.io/post/markdown/</link>
+      <pubDate>Thu, 22 Oct 2020 05:31:59 UTC</pubDate>
+      <author>Iacopo Moles</author>
+      <guid>http://474379221658.ngrok.io/post/markdown/</guid>
+      <description> &lt;p&gt;Example of markdown supported by HUGO CMS:&lt;/p&gt;
+&lt;h2 id=&#34;text-type&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#text-type&#34;&gt;# &lt;/a&gt;Text type &lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;**Bold text**&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Italic Text&lt;/em&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;_Italic Text_&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Quotation section&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With subsection&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;text-decoration:underline&#34;&gt;Quotation section
+&lt;/span&gt;&lt;span style=&#34;text-decoration:underline&#34;&gt;&lt;/span&gt;&amp;gt;
+&amp;gt; &amp;gt; With subsection&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;headings&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#headings&#34;&gt;# &lt;/a&gt;Headings &lt;/h2&gt;
+&lt;h4 id=&#34;various&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#various&#34;&gt;# &lt;/a&gt;Various &lt;/h4&gt;
+&lt;h6 id=&#34;headings-1&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#headings-1&#34;&gt;# &lt;/a&gt;Headings &lt;/h6&gt;
+&lt;h3 id=&#34;sizes&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#sizes&#34;&gt;# &lt;/a&gt;Sizes &lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;#### Various
+&lt;/span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;&lt;/span&gt;
+&lt;span style=&#34;font-weight:bold&#34;&gt;###### Headings
+&lt;/span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;&lt;/span&gt;
+### Sizes&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;image&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#image&#34;&gt;# &lt;/a&gt;Image &lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;http://474379221658.ngrok.io/uploads/gohugoio-card-1.png&#34; alt=&#34;Hugo Banner&#34;  /&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span style=&#34;color:#ff79c6&#34;&gt;File Description&lt;/span&gt;](&lt;span style=&#34;color:#50fa7b&#34;&gt;path/to/file/gohugoio-card-1.png&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;h2 id=&#34;link&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#link&#34;&gt;# &lt;/a&gt;Link &lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34; title=&#34;Hugo CMS&#34;&gt;Homepage for the CMS&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;[&lt;span style=&#34;color:#ff79c6&#34;&gt;Homepage for the CMS&lt;/span&gt;](&lt;span style=&#34;color:#50fa7b&#34;&gt;https://gohugo.io/ &amp;#34;Link description&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;list&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#list&#34;&gt;# &lt;/a&gt;List &lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Unordered&lt;/li&gt;
+&lt;li&gt;list
+&lt;ul&gt;
+&lt;li&gt;with&lt;/li&gt;
+&lt;li&gt;sublists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; Unordered
+&lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; list
+  &lt;span style=&#34;color:#ff79c6&#34;&gt;*&lt;/span&gt; with
+  * sublists&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;Ordered&lt;/li&gt;
+&lt;li&gt;sublist
+&lt;ol&gt;
+&lt;li&gt;with&lt;/li&gt;
+&lt;li&gt;sublists&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;1.&lt;/span&gt; Ordered
+&lt;span style=&#34;color:#ff79c6&#34;&gt;2.&lt;/span&gt; sublist
+   &lt;span style=&#34;color:#ff79c6&#34;&gt;1.&lt;/span&gt; with
+   2. sublists&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#code-blocks&#34;&gt;# &lt;/a&gt;Code blocks &lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;package&lt;/span&gt; main
+
+&lt;span style=&#34;color:#ff79c6&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;main&lt;/span&gt;() {
+fmt.&lt;span style=&#34;color:#50fa7b&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;hello world&amp;#34;&lt;/span&gt;)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;was produced by: &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;{{&amp;lt;  &lt;span style=&#34;color:#ff79c6&#34;&gt;highlight&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;your_language&lt;/span&gt; &amp;#34;&lt;span style=&#34;color:#50fa7b&#34;&gt;linenos&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;table&amp;#34;&lt;/span&gt; &amp;gt;}}
+
+package main
+
+import &amp;#34;fmt&amp;#34;
+
+func main() {
+fmt.Println(&amp;#34;hello world&amp;#34;)
+}
+{{&amp;lt;  /&lt;span style=&#34;color:#ff79c6&#34;&gt;highlight&lt;/span&gt; &amp;gt;}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#footnotes&#34;&gt;# &lt;/a&gt;Footnotes &lt;/h2&gt;
+&lt;p&gt;To use footnotes&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;
+&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 1
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 2
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 3
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 4
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 5
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 6
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 7
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 8
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt; 9
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;10
+&lt;/span&gt;&lt;span style=&#34;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
+&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;your text [^name of your footnote] ... your other text
+
+.
+
+.
+
+.
+
+(end of the page)
+
+[^name of your footnote]: description of your footnote&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;To avoid Hugo CMS from rendering your shortcodes use &lt;a href=&#34;https://liatas.com/posts/escaping-hugo-shortcodes/&#34;&gt;this guide&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The number things you see on every boring book or in Wikipedia &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt; </description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://474379221658.ngrok.io/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 UTC</pubDate>
+      <author>Hugo Authors</author>
+      <guid>http://474379221658.ngrok.io/post/markdown-syntax/</guid>
+      <description> &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#headings&#34;&gt;# &lt;/a&gt;Headings &lt;/h2&gt;
+&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h1&#34;&gt;# &lt;/a&gt;H1 &lt;/h1&gt;
+&lt;h2 id=&#34;h2&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h2&#34;&gt;# &lt;/a&gt;H2 &lt;/h2&gt;
+&lt;h3 id=&#34;h3&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h3&#34;&gt;# &lt;/a&gt;H3 &lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h4&#34;&gt;# &lt;/a&gt;H4 &lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h5&#34;&gt;# &lt;/a&gt;H5 &lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#h6&#34;&gt;# &lt;/a&gt;H6 &lt;/h6&gt;
+&lt;h2 id=&#34;paragraph&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#paragraph&#34;&gt;# &lt;/a&gt;Paragraph &lt;/h2&gt;
+&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#blockquotes&#34;&gt;# &lt;/a&gt;Blockquotes &lt;/h2&gt;
+&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
+&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#blockquote-without-attribution&#34;&gt;# &lt;/a&gt;Blockquote without attribution &lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#blockquote-with-attribution&#34;&gt;# &lt;/a&gt;Blockquote with attribution &lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;!-- raw HTML omitted --&gt;
+— &lt;!-- raw HTML omitted --&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#tables&#34;&gt;# &lt;/a&gt;Tables &lt;/h2&gt;
+&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#inline-markdown-within-tables&#34;&gt;# &lt;/a&gt;Inline Markdown within tables &lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Italics&lt;/th&gt;
+&lt;th&gt;Bold&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#code-blocks&#34;&gt;# &lt;/a&gt;Code Blocks &lt;/h2&gt;
+&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#code-block-with-backticks&#34;&gt;# &lt;/a&gt;Code block with backticks &lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;title&lt;/span&gt;&amp;gt;Example HTML5 Document&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;title&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;body&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;p&lt;/span&gt;&amp;gt;Test&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;html&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#code-block-indented-with-four-spaces&#34;&gt;# &lt;/a&gt;Code block indented with four spaces &lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#code-block-with-hugos-internal-highlight-shortcode&#34;&gt;# &lt;/a&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode &lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;html&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;lang&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;head&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;meta&lt;/span&gt; &lt;span style=&#34;color:#50fa7b&#34;&gt;charset&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;title&lt;/span&gt;&amp;gt;Example HTML5 Document&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;title&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;head&lt;/span&gt;&amp;gt;
+&amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;body&lt;/span&gt;&amp;gt;
+  &amp;lt;&lt;span style=&#34;color:#ff79c6&#34;&gt;p&lt;/span&gt;&amp;gt;Test&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;p&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;body&lt;/span&gt;&amp;gt;
+&amp;lt;/&lt;span style=&#34;color:#ff79c6&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;list-types&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#list-types&#34;&gt;# &lt;/a&gt;List Types &lt;/h2&gt;
+&lt;h4 id=&#34;ordered-list&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#ordered-list&#34;&gt;# &lt;/a&gt;Ordered List &lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#unordered-list&#34;&gt;# &lt;/a&gt;Unordered List &lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;li&gt;And another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nested-list&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#nested-list&#34;&gt;# &lt;/a&gt;Nested list &lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fruit
+&lt;ul&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dairy
+&lt;ul&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;li&gt;Cheese&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#other-elements--abbr-sub-sup-kbd-mark&#34;&gt;# &lt;/a&gt;Other Elements — abbr, sub, sup, kbd, mark &lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
+&lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; + Y&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; = Z&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
+&lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;&gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt; </description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>http://474379221658.ngrok.io/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 UTC</pubDate>
+      <author>Hugo Authors</author>
+      <guid>http://474379221658.ngrok.io/post/rich-content/</guid>
+      <description> &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#youtube-privacy-enhanced-shortcode&#34;&gt;# &lt;/a&gt;YouTube Privacy Enhanced Shortcode &lt;/h2&gt;
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;100%&#34; height=&#34;400&#34;
+  src=&#34;https://www.youtube-nocookie.com/embed/ZJthWmvUzzc?color=white&amp;modestbranding&amp;rel=0&amp;playsinline&amp;showinfo=0&amp;controls=2&#34; 
+  frameborder=&#34;0&#34;
+  srcdoc=&#34;&lt;style&gt;*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto }span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}&lt;/style&gt;&lt;a href=https://www.youtube-nocookie.com/embed/ZJthWmvUzzc?color=white&amp;modestbranding&amp;rel=0&amp;playsinline&amp;showinfo=0&amp;controls=2&amp;autoplay=1&gt;&lt;img src=https://img.youtube.com/vi/ZJthWmvUzzc/hqdefault.jpg loading=lazy &gt;&lt;span&gt;▶&lt;/span&gt;&lt;/a&gt;&#34;
+  allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34;
+  allowfullscreen
+  loading=&#34;lazy&#34;
+&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#twitter-simple-shortcode&#34;&gt;# &lt;/a&gt;Twitter Simple Shortcode &lt;/h2&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#vimeo-simple-shortcode&#34;&gt;# &lt;/a&gt;Vimeo Simple Shortcode &lt;/h2&gt;
+
+
+
+
+
+
+&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;
+
+
+&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;a href=&#34;https://vimeo.com/4.8912912e&amp;#43;07&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
+
+
+&lt;img src=&#34;https://i.vimeocdn.com/video/337401969_640.jpg&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969_640.jpg 1x, https://i.vimeocdn.com/video/337401969.jpg 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
+&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt; </description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>http://474379221658.ngrok.io/post/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 UTC</pubDate>
+      <author>Hugo Authors</author>
+      <guid>http://474379221658.ngrok.io/post/placeholder-text/</guid>
+      <description> &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
+&lt;li&gt;Duce pollice&lt;/li&gt;
+&lt;li&gt;Eris modo&lt;/li&gt;
+&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
+&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
+&lt;li&gt;Flumen querellas&lt;/li&gt;
+&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
+&lt;li&gt;Quidem et&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;vagus-elidunt&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#vagus-elidunt&#34;&gt;# &lt;/a&gt;Vagus elidunt &lt;/h1&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;&gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#mane-refeci-capiebant-unda-mulcebat&#34;&gt;# &lt;/a&gt;Mane refeci capiebant unda mulcebat &lt;/h2&gt;
+&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
+&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
+&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt; </description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>http://474379221658.ngrok.io/post/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 UTC</pubDate>
+      <author>Hugo Authors</author>
+      <guid>http://474379221658.ngrok.io/post/math-typesetting/</guid>
+      <description> &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;In this example we will be using &lt;a href=&#34;https://katex.org/&#34;&gt;KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Within this partial reference the &lt;a href=&#34;https://katex.org/docs/autorender.html&#34;&gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
+&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#ff79c6&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span style=&#34;color:#ff79c6&#34;&gt;}}&lt;/span&gt;
+&lt;span style=&#34;color:#ff79c6&#34;&gt;{{&lt;/span&gt; partial &lt;span style=&#34;color:#f1fa8c&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span style=&#34;color:#ff79c6&#34;&gt;}}&lt;/span&gt;
+&lt;span style=&#34;color:#ff79c6&#34;&gt;{{&lt;/span&gt; end &lt;span style=&#34;color:#ff79c6&#34;&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
+&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a href=&#34;https://katex.org/docs/supported.html&#34;&gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;&lt;a class=&#34;anchor  mark-html&#34; href=&#34;#examples&#34;&gt;# &lt;/a&gt;Examples &lt;/h3&gt;
+
+&lt;p&gt;Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$&lt;/p&gt; </description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>http://474379221658.ngrok.io/post/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 UTC</pubDate>
+      <author>Hugo Authors</author>
+      <guid>http://474379221658.ngrok.io/post/emoji-support/</guid>
+      <description> &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The &lt;a href=&#34;http://www.emoji-cheat-sheet.com/&#34;&gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.emoji {
+  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt; </description>
+    </item>
+    
+  </channel>
+</rss>
+

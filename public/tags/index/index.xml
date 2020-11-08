@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on Pyxill 2</title>
+    <link>http://474379221658.ngrok.io/tags/index/</link>
+    <description>Recent content in index on Pyxill 2</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language><atom:link href="http://474379221658.ngrok.io/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>http://474379221658.ngrok.io/post/</link>
+      <pubDate>Tue, 27 Oct 2020 09:30:43 +0000</pubDate>
+      
+      <guid>http://474379221658.ngrok.io/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

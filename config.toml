@@ -1,5 +1,5 @@
-baseURL = "https://pyxill2.netlify.com/"
-absURL= "https://pyxill2.netlify.com"
+baseURL = "http://474379221658.ngrok.io/"
+absURL= "http://474379221658.ngrok.io"
 languageCode = "en-en"
 title = "Pyxill 2"
 
