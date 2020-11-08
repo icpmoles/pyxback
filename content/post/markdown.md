@@ -110,7 +110,7 @@ fmt.Println("hello world")
 
 {{< /highlight>}}
 
-was produced by: \[^markdown escape\]
+was produced by: [^markdown escape]
 
 {{< highlight markdown "linenos=table">}}
 
@@ -129,7 +129,7 @@ fmt.Println("hello world")
 
 ## Footnotes
 
-To use footnotes\[^wiki\]
+To use footnotes[^wiki]
 
 {{< highlight markdown "linenos=table">}}
 
