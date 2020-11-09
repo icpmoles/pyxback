@@ -72,29 +72,12 @@ enableEmoji = true
     disable = false
     privacyEnhanced = true 
     
-[build]
-  writeStats = true
-  
 
 [markup]
+  defaultMarkdownHandler = "goldmark"
   [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      attribute = true
-      autoHeadingID = true
-      autoHeadingIDType = "github"
     [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = false
-      xhtml = false
-      
+      unsafe = true
 
 [menu]
 
