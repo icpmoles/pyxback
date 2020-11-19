@@ -7,8 +7,9 @@ tags:
   - shortcode
   - tutorial
 banner: ""
-latex: false
+math: false
 toc: true
+latex: false
 ---
 Hugo supports custom elements to incorporate snippets from other services.
 
@@ -20,8 +21,6 @@ Hugo supports custom elements to incorporate snippets from other services.
 {{</* instagram BWNjjyYFxVx */>}}
 ```
 
-
-
 ## Twitter
 
 ```markdown
@@ -31,8 +30,6 @@ Hugo supports custom elements to incorporate snippets from other services.
 Renders as:
 
 {{< tweet 877500564405444608 >}}
-
-
 
 ## Vimeo
 
@@ -44,7 +41,6 @@ Renders as:
 
 {{< vimeo 146022717 >}}
 
-
 ## Gist
 
 ```markdown
@@ -54,7 +50,6 @@ Renders as:
 Renders as:
 
 {{< gist spf13 7896402 >}}
-
 
 ## YouTube
 
