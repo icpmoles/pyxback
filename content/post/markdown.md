@@ -13,7 +13,7 @@ tags:
   - guide
   - manual
 banner: /uploads/gohugoio-card.png
-math: true
+math: false
 toc: true
 latex: false
 ---
