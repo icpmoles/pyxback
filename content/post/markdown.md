@@ -173,7 +173,7 @@ your text [^name of your footnote] ... your other text
 
 {{<quote green>}} Quote with green accent {{</quote>}}
 
-{{< highlight markdown "linenos=table">}}
+{{< highlight markdown >}}
 
 {{</ *quote green* />}} Quote with green accent {{</ */quote* />}}
 
