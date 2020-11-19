@@ -120,7 +120,7 @@ was produced by: [^markdown escape]
 
 {{< highlight markdown "linenos=table">}}
 
-{{</ * highlight your_language "linenos=table"* />}}
+{{</*  highlight your_language "linenos=table" */>}}
 
 package main
 
@@ -129,7 +129,7 @@ import "fmt"
 func main() {
 fmt.Println("hello world")
 }
-{{</ * /highlight* />}}
+{{</*  /highlight */>}}
 
 {{< /highlight>}}
 
@@ -175,7 +175,7 @@ your text [^name of your footnote] ... your other text
 
 {{< highlight markdown >}}
 
-{{</ *quote green* />}} Quote with green accent {{</ */quote* />}}
+{{</* quote green */>}} Quote with green accent {{</* /quote */>}}
 
 {{< /highlight>}}
 
