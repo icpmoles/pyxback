@@ -1,13 +1,22 @@
-+++
-author = "Iacopo Moles"
-banner = "/uploads/gohugoio-card.png"
-date = 2020-10-22T05:31:59Z
-latex = false
-tags = ["pyxill2", "code block", "highlight", "code", "quote", "syntax", "markdown", "guide", "manual"]
-title = "Markdown"
-toc = true
-
-+++
+---
+title: Markdown
+author: Iacopo Moles
+date: 2020-10-22T05:31:59.000Z
+tags:
+  - pyxill2
+  - code block
+  - highlight
+  - code
+  - quote
+  - syntax
+  - markdown
+  - guide
+  - manual
+banner: /uploads/gohugoio-card.png
+math: true
+toc: true
+latex: false
+---
 Example of markdown supported by HUGO CMS:
 
 <!--more-->
@@ -18,9 +27,9 @@ Example of markdown supported by HUGO CMS:
 
 {{< highlight markdown >}}**Bold text**{{< / highlight>}}
 
-_Italic Text_
+*Italic Text*
 {{< highlight markdown>}}
-_Italic Text_
+*Italic Text*
 {{< / highlight>}}
 
 `Inline code section`
@@ -61,6 +70,7 @@ _Italic Text_
 
 * Unordered
 * list
+
   * with
   * sublists
 
@@ -68,15 +78,17 @@ _Italic Text_
 
 * Unordered
 * list
+
   * with
   * sublists
 
 {{< / highlight>}}
 
-***
+- - -
 
 1. Ordered
 2. sublist
+
    1. with
    2. sublists
 
@@ -84,6 +96,7 @@ _Italic Text_
 
 1. Ordered
 2. sublist
+
    1. with
    2. sublists
 
@@ -107,7 +120,7 @@ was produced by: [^markdown escape]
 
 {{< highlight markdown "linenos=table">}}
 
-{{</*  highlight your_language "linenos=table" */>}}
+{{</ * highlight your_language "linenos=table"* />}}
 
 package main
 
@@ -116,7 +129,7 @@ import "fmt"
 func main() {
 fmt.Println("hello world")
 }
-{{</*  /highlight */>}}
+{{</ * /highlight* />}}
 
 {{< /highlight>}}
 
@@ -150,7 +163,7 @@ your text [^name of your footnote] ... your other text
 >
 > > Nested Block
 
-{{< highlight markdown "linenos=table">}}
+{{< highlight markdown >}}
 
 > Example of quoteblock
 >
@@ -162,7 +175,7 @@ your text [^name of your footnote] ... your other text
 
 {{< highlight markdown "linenos=table">}}
 
-{{</* quote green */>}} Quote with green accent {{</* /quote */>}}
+{{</ *quote green* />}} Quote with green accent {{</ */quote* />}}
 
 {{< /highlight>}}
 
