@@ -25,7 +25,9 @@ Head to Github and on Settings -> Developer Settings -> Personale Access Tokens 
 
 Write a placeholder name and select the repo and user subsections. Then press Generate token.
 
+{{< warning "Irrecoverable token">}}
 Copy the new token generated and save it somewhere. Keep in mind that you can't recover it in future.
+{{</ warning >}}
 
 ## Deploy on Heroku
 
@@ -97,9 +99,9 @@ In the `[params]` section comment out (delete the hash character) the `staticman
 https://<name-of-your-heroku-istance>.herokuapp.com/v2/entry/<github_username>/<github_repo>/main/comments
 ```
 
-{{< quote red>}}
-Pay attention to which branch you're submitting: main or master can cause errors if not filled correctly.
-{{</ quote >}}
+{{< info "Branch problems">}}
+Pay attention to which branch you're submitting: `main` or `master` can cause errors if not filled correctly.
+{{</ info >}}
 
 Save.
 

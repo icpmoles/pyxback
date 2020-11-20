@@ -20,6 +20,7 @@ Hugo supports custom elements to incorporate snippets from other services.
 ```markdown
 {{</* instagram BWNjjyYFxVx */>}}
 ```
+{{<info "Instagram problems" >}}In [October 2020](https://www.searchenginejournal.com/facebook-instagram-drop-support-for-wordpress-embeds/383847/) Instagram changed the API that Hugo used to create the embedded content causing failed builds all across the Internet, this shortcode will probably be deprecated in the future.{{</info>}}
 
 ## Twitter
 

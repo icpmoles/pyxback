@@ -47,6 +47,11 @@ enableEmoji = true
   footer_links = true #enables a footer navigation bar
   custom_navbar = true #makes the main navbar editable
   custom_footbar = true #maked the footbare editable 
+  [params.alert]
+    warning="⚠️"
+    error="❗"
+    success="✔"
+    info="ℹ️"
 
 
 [author]

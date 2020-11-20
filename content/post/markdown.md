@@ -179,10 +179,112 @@ your text [^name of your footnote] ... your other text
 
 {{< /highlight>}}
 
-The custom quote shortcode supports 5 colors:
+The custom quote shortcode supports 6 colors:
 
 1. red
 2. green
 3. yellow
 4. orange
 5. purple
+6. blue
+
+You can iterate through them
+
+{{<quote green>}} Quote with green accent 
+
+{{<quote red>}} Subquote with red accent
+ 
+{{<quote purple>}} Keep in mind to not rely too much on color to avoid difficulties to colorblind people {{</quote>}}
+{{<quote orange >}} You can use this for conversation or various graphs {{</quote>}}
+{{<quote yellow >}} To create warning signs or other alert there are custom shortcodes for that
+{{<quote blue >}} Blue {{</quote>}}
+ {{</quote>}}
+
+ {{</quote>}}
+
+
+{{<quote yellow >}} Subquote with yellow accent {{</quote>}}
+
+{{<quote orange >}} Subquote with orange accent {{</quote>}}
+
+{{</quote>}}
+
+
+## Alerts
+
+There are various way to mark some important infromation for your readers, one way is to use alert messages. To describe the type of alert this theme uses a syntax similar to [Bootstrap](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) to differentiate between them:
+
+- Danger
+- Warning
+- Info
+- Success
+
+
+
+### Danger
+
+{{<danger "Danger Title" >}} This alert box indicates a dangerous or potentially negative action {{</danger>}}
+
+{{< highlight markdown >}}
+
+{{</* danger "Danger Title" */>}}
+ This alert box indicates a dangerous or potentially negative action
+{{</* / danger */>}}
+
+
+{{< /highlight>}}
+
+### Warning
+
+
+{{<warning "Warning title" >}} This alert box indicates a warning that might need attention.{{</warning>}}
+
+{{< highlight markdown >}}
+
+{{</* warning "Warning Title" */>}}
+This alert box indicates a warning that might need attention.
+{{</* / warning */>}}
+
+
+{{< /highlight>}}
+
+### Info
+
+{{<info "Info title" >}} This alert box indicates a neutral informative change or action. {{</info>}}
+
+{{< highlight markdown >}}
+
+{{</* info "Info Title" */>}}
+ This alert box indicates a neutral informative change or action.
+{{</* / info */>}}
+
+
+{{< /highlight>}}
+
+### Success
+
+{{<success "Success title" >}}  This alert box indicates a successful or positive action. {{</success>}}
+
+{{< highlight markdown >}}
+
+{{</* success "Success title" */>}}
+ This alert box indicates a successful or positive action.
+{{</* / success */>}}
+
+
+{{< /highlight>}}
+
+### Configuration
+
+You can edit the default symbols displayed on every type of alert by editing your config file
+
+{{< highlight toml >}}
+
+[params]
+  [params.alert]
+    warning="⚠️"
+    error="❗"
+    success="✔"
+    info="ℹ️"
+
+{{< /highlight>}}
