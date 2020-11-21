@@ -196,7 +196,7 @@ You can iterate through them
  
 {{<quote purple>}} Keep in mind to not rely too much on color to avoid difficulties to colorblind people {{</quote>}}
 {{<quote orange >}} You can use this for conversation or various graphs {{</quote>}}
-{{<quote yellow >}} To create warning signs or other alert there are custom shortcodes for that
+{{<quote yellow >}} To create warning signs or other alert there are custom shortcodes for that [Bootstrap](https://www.w3schools.com/bootstrap/bootstrap_alerts.asp) 
 {{<quote blue >}} Blue {{</quote>}}
  {{</quote>}}
 
