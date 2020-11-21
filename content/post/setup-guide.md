@@ -47,7 +47,7 @@ Now go to  Site Settings -> Identity -> Registration and in the Registration Pre
 ![](/uploads/invite-only.png)
 
 {{<warning "Security Warning" >}}
-Double to check this step, otherwise everyone could be able to enter the CMS and edit your blog.
+Double check this step, otherwise everyone could be able to enter the CMS and edit your blog.
 
 I don't know why Netlify set the default permission to open to everyone but I hope they will change this in the future.
 {{</warning>}}

@@ -237,7 +237,8 @@ There are various way to mark some important infromation for your readers, one w
 ### Warning
 
 
-{{<warning "Warning title" >}} This alert box indicates a warning that might need attention.{{</warning>}}
+{{<warning "Warning title" >}} This alert box indicates a warning that might need attention.
+{{</warning>}}
 
 {{< highlight markdown >}}
 
