@@ -1,5 +1,5 @@
-baseURL = "https://pyxill2.netlify.app/"
-absURL= "https://pyxill2.netlify.app"
+baseURL = "https://pyxback.pages.dev/"
+absURL= "https://pyxback.pages.dev"
 languageCode = "en-en"
 title = "Pyxill 2"
 
@@ -27,9 +27,9 @@ enableEmoji = true
   admin_hash="d959b6db5935acae2c0aeac2956f2c13"
 #  admin_hash="hashofyouremail" #in case of local
   math_library="katex" #you can choose between katex or mathjax depending on your needs
-  hostName = "https://pyxill2.netlify.com"
+  hostName = "https://pyxback.pages.dev"
   toc= true
-  absURL= "https://pyxill2.netlify.com"
+  absURL= "https://pyxback.pages.dev"
   mainSections = ["post"]
   bg_color= "#3b4252"
   theme_color= "#4c566a"
