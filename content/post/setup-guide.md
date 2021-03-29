@@ -12,7 +12,7 @@ tags:
   - Cloudflare Pages
   - Cloudflare
 banner: ""
-math: true
+math: false
 toc: true
 latex: false
 ---
