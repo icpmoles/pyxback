@@ -104,7 +104,7 @@ Then after being logged in select the repository you made at the initial steps o
 
 Now head over to Settings -> General -> Url and copy your website URL from Netlify.
 
-![](/url-set.png)
+![](url-set.png)
 
 In the same page, in the Project Paths section set Admin Path as `/static/admin` an press Deploy Admin.
 
