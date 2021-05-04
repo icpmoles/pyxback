@@ -21,7 +21,7 @@ How to setup your comments <!--more-->
 
 Head to Github and on Settings -> Developer Settings -> Personale Access Tokens and click [Generate New Token](https://github.com/settings/tokens/new).
 
-![Github](screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png)
+![Github](screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png "Github Token Permission")
 
 Write a placeholder name and select the repo and user subsections. Then press Generate token.
 
