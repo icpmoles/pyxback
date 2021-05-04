@@ -12,7 +12,7 @@ tags:
   - markdown
   - guide
   - manual
-banner: /uploads/gohugoio-card.png
+banner: gohugoio-card.png
 math: false
 toc: true
 latex: false
@@ -57,7 +57,7 @@ Example of markdown supported by HUGO CMS:
 
 ## Image
 
-![Hugo Banner](/uploads/gohugoio-card-1.png)
+![Hugo Banner](gohugoio-card-1.png)
 {{< highlight markdown >}}![File Description](path/to/file/gohugoio-card-1.png){{< / highlight>}}
 
 ## Link

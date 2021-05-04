@@ -11,7 +11,7 @@ tags:
 - comments
 latex: false
 toc: true
-banner: "/uploads/static-sites-generator.png"
+banner: "static-sites-generator.png"
 math: false
 
 ---
@@ -21,7 +21,7 @@ How to setup your comments <!--more-->
 
 Head to Github and on Settings -> Developer Settings -> Personale Access Tokens and click [Generate New Token](https://github.com/settings/tokens/new).
 
-![](/uploads/screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png)
+![Github](screencapture-github-settings-tokens-new-2020-10-23-14_00_59.png)
 
 Write a placeholder name and select the repo and user subsections. Then press Generate token.
 
@@ -35,9 +35,9 @@ Head over to the GitHub [project page](https://github.com/eduardoboucas/staticma
 
 You will land on a page where a name for your project is asked. Type whatever name you would like and confirm.
 
-![](/uploads/heroku-landing.png)
+![](heroku-landing.png)
 
-![](/uploads/building.png)
+![](building.png)
 
 At the end of the setup you can continue on Manage App.
 
@@ -45,13 +45,13 @@ At the end of the setup you can continue on Manage App.
 
 From the toolbar click More -> Run Console and type `openssl genrsa -out key.pem && cat key.pem` and then press Save Session. [^linux]
 
-![](/uploads/command-pem.png)
+![](command-pem.png)
 
-![](/uploads/save-session.png)
+![](save-session.png)
 
 A .txt file is going to be downloaded.
 
-![](/uploads/txt.png)
+![](txt.png)
 
 Open it and copy the section made by:
 
@@ -75,7 +75,7 @@ Go to Settings -> Config Vars and type the following fields:
 
 `RSA_PRIVATE_KEY` = [(Private Key from before)](#generate-private-key)
 
-![](/uploads/config-vars.png)
+![](config-vars.png)
 
 ## Check if it works
 

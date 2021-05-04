@@ -14,7 +14,7 @@ pygmentsCodefences=true
 pygmentsOptions="linenos=false"
 Paginate= 10
 relativeURLs = true
-canonifyURLs= true
+canonifyURLs= false
 enableEmoji = true
 
 

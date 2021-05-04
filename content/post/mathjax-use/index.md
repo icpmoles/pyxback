@@ -1,6 +1,6 @@
 +++
 author = "Iacopo Moles"
-banner = "/uploads/1_-_hero_image_xmab9m.jpg"
+banner = "1_-_hero_image_xmab9m.jpg"
 date = 2020-10-22T06:40:05Z
 math = true
 tags = ["Math rendering", "MathJax", "configuration", "syntax", "latex", "Katex"]
