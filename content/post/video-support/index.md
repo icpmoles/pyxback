@@ -36,6 +36,27 @@ To summarize
 
 If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.asp) you just need to place an image with an image extensionin the same page folder with the same name of the video. Continuing the example from before you will place a file called `my-beautiful-screencast.jpeg` or `my-beautiful-screencast.png` and it will show up as a video preview instead of the first frame of the video
 
+## Multiple Video Types
+
+The component will include various video sources to improve browser compatibility. You just need to provide the videos with different extensions and keeping the same filename.
+
+
+To summarize your folder should look like this:
+
+{{< highlight bash "linenos=false">}}$ tree post-folder
+post-folder
+├── index.md
+└──input.mp4 {{< / highlight>}}
+
+But if you want to add poster and multiple video types you just need to:
+
+{{< highlight bash "linenos=false">}}$ tree post-folder
+post-folder
+├── index.md
+├── input.jpeg
+├── input.mp4
+└── input.webm {{< / highlight>}}
+
 
 ### Width
 
@@ -44,6 +65,11 @@ If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.as
 ### Height
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" height="200px" */>}} {{< / highlight>}}
+
+ To fit  the video in the video player:
+
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast"  width=auto height="200px" */>}} {{< / highlight>}}
+
 
 
 ### Muted
@@ -64,7 +90,7 @@ If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.as
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" loop="true" */>}} {{< / highlight>}}
 
-## Result
+## Results
 
 ### Vanilla
 
@@ -77,6 +103,8 @@ If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.as
 ### Height
 
 {{<  video src="input" height="200px" >}} 
+
+{{<  video src="input" width=auto height="200px" >}} 
 
 ### Muted
 
