@@ -9,6 +9,10 @@ toc: true
 latex: false
 ---
 
+In case you want to host your videos directly in your website without relying on Youtube or other third parties this is how to do it.
+
+<!--more-->
+
 ## The Hugo Video component
 
 You can use [this guide](https://github.com/martignoni/hugo-video)

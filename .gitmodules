@@ -1,3 +1,6 @@
 [submodule "themes/pyxill2"]
 	path = themes/pyxill2
 	url = https://github.com/IcpMoles/pyxill2
+[submodule "themes/hugo-video"]
+	path = themes/hugo-video
+	url = https://github.com/martignoni/hugo-video.git
