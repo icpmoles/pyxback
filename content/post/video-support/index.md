@@ -4,7 +4,7 @@ date: 2021-05-09T17:42:32+02:00
 draft: false
 author: "Iacopo Moles"
 latex: false
-tags:  [ fill me ]
+tags:  [ "video", "hugo component", "hugo-video" ]
 toc: true
 latex: false
 ---
@@ -34,7 +34,7 @@ To summarize
 
 ### Poster
 
-If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.asp) you just need to place an image with an image extensionin the same page folder with the same name of the video. Continuing the example from before you will place a file called `my-beautiful-screencast.jpeg` or `my-beautiful-screencast.png` and it will show up as a video preview instead of the first frame of the video
+If you want to use a [poster](https://www.w3schools.com/TAgs/att_video_poster.asp) you just need to place an image with an image extension in the same page folder using the same filename of the video. Continuing the example from before you will place a file called `my-beautiful-screencast.jpeg` or `my-beautiful-screencast.png` and it will show up as a video preview instead of the first frame of the video
 
 ## Multiple Video Types
 
@@ -46,78 +46,72 @@ To summarize your folder should look like this:
 {{< highlight bash "linenos=false">}}$ tree post-folder
 post-folder
 ├── index.md
-└──input.mp4 {{< / highlight>}}
+└── my-beautiful-screencast.mp4 {{< / highlight>}}
 
 But if you want to add poster and multiple video types you just need to:
 
 {{< highlight bash "linenos=false">}}$ tree post-folder
 post-folder
 ├── index.md
-├── input.jpeg
-├── input.mp4
-└── input.webm {{< / highlight>}}
+├── my-beautiful-screencast.jpeg
+├── my-beautiful-screencast.mp4
+└── my-beautiful-screencast.webm {{< / highlight>}}
+
+{{< video src="input" >}}
 
 
 ### Width
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" width="600px" */>}} {{< / highlight>}}
+ 
+
+{{<warning "Mobile incompatibility" >}} Be aware that a width too big may break the visualization on small size devices {{</warning>}}
+
+{{<  video src="input" width="600px" >}} 
 
 ### Height
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" height="200px" */>}} {{< / highlight>}}
 
- To fit  the video in the video player:
-
- {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast"  width=auto height="200px" */>}} {{< / highlight>}}
+ {{<  video src="input" height="200px" >}} 
 
 
+ {{<info "Mobile incompatibility" >}}For a better looking videoplayer:
+
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast"  width=auto height="200px" */>}} {{< / highlight>}} 
+ {{</info>}}
+
+
+
+{{<  video src="input" width=auto height="200px" >}}
 
 ### Muted
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" muted="true" */>}} {{< / highlight>}}
 
 
-### Controls
-
- {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" controls="false" */>}} {{< / highlight>}}
-
-
-### Autoplay
-
- {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" autoplay="true" */>}} {{< / highlight>}}
-
-### Loop
-
- {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" loop="true" */>}} {{< / highlight>}}
-
-## Results
-
-### Vanilla
-
-{{< video src="input" >}}
-
-### Width
-
-{{<  video src="input" width="600px" >}} 
-
-### Height
-
-{{<  video src="input" height="200px" >}} 
-
-{{<  video src="input" width=auto height="200px" >}} 
-
-### Muted
-
 {{<  video src="input" muted="true" >}} 
 
 ### Controls
+
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" controls="false" */>}} {{< / highlight>}}
 
 {{<  video src="input" controls="false" >}} 
 
 ### Autoplay
 
+{{<warning "Autoplay annoyance" >}} To avoid unwanted data usage and annoying sounds playing at the page opening it's better to use small videos and the muted tag {{</warning>}}
+
+
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" autoplay="true" */>}} {{< / highlight>}}
+
+
 {{<  video src="input" autoplay="true" >}} 
+
 
 ### Loop
 
-{{<  video src="input" loop="true" >}} 
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" loop="true" */>}} {{< / highlight>}}
+
+ {{<  video src="input" loop="true" >}} 
+
