@@ -115,3 +115,15 @@ post-folder
 
  {{<  video src="input" loop="true" >}} 
 
+
+### Preload
+
+The `preload` tag will default to `metadata` unless specified otherwise. The other values are `none` and `auto`.
+
+{{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" preload="auto" */>}} {{< / highlight>}}
+{{<  video src="input" preload="auto" >}} 
+
+
+{{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" preload="none" */>}} {{< / highlight>}}
+{{<  video src="input" preload="none" >}} 
+
