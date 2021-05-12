@@ -36,8 +36,6 @@ post-folder
 └── my-beautiful-screencast.es.vtt {{< / highlight>}}
 
 
-
-
 ### Example
 
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast"  */>}} {{< / highlight>}}
@@ -48,3 +46,4 @@ post-folder
 {{< video src="input" >}}
 
 
+Video credits go to the Blender Foundation for [Elephants Dream](https://orange.blender.org/)
