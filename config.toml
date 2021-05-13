@@ -40,14 +40,17 @@ enableEmoji = true
   banner= "banner.png"
   staticman_api = "https://staticman-tutorial-hugo.herokuapp.com/v2/entry/IcpMoles/pyxback/main/comments" #Add staticman API URL to enable staticman comments
  #  RssUrl =  "https://example.com/rss"
-  google_analytics_id = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"
+  google_site_verification = "73mlN4x3UZrTPxQ07EkDwLhKXo2GPTaP8JWKfg5vhWg"
   flattr_id = "e0v7jk"
   payment_pointer = "$ilp.uphold.com/kk3ZPeDi34nP"
-  google_analytics_js = false
+  google_analytics_js = true
   js_privacy = true #uses locally hosted libraries instead of using their CDN
   footer_links = true #enables a footer navigation bar
   custom_navbar = true #makes the main navbar editable
   custom_footbar = true #maked the footbare editable 
+  cloudflare_analytics_token="30ee2e824b8b4a7facbb452341d93174"
+  google_analytics_id= "G-9MY8M0M378"
+
   [params.alert]
     warning="⚠️"
     error="❗"
