@@ -190,8 +190,9 @@ canonifyURLs= true
 ## Screenshots
 
 
-![Pixyll Screenshot](https://raw.githubusercontent.com/IcpMoles/pyxill2/master/images/mobile%20light.png)![Pixyll Screenshot](https://raw.githubusercontent.com/IcpMoles/pyxill2/master/images/mobile%20dark.png)
-![Pixyll Screenshot](https://raw.githubusercontent.com/IcpMoles/pyxill2/master/images/desktop%20light.png)
-![Pixyll Screenshot](https://raw.githubusercontent.com/IcpMoles/pyxill2/master/images/desktop%20dark.png)
+![Pixyll Screenshot](/uploads/mobile%20light.png)
+![Pixyll Screenshot](/uploads/mobile%20dark.png)
+![Pixyll Screenshot](/uploads/desktop%20light.png)
+![Pixyll Screenshot](/uploads/desktop%20dark.png)
 ## Lighthouse Score
-![Lighthouse of 100](https://raw.githubusercontent.com/IcpMoles/pyxill2/master/images/Screenshot_20201022-105923~2.png)
+![Lighthouse of 100](/uploads/Screenshot_20201022-105923~2.png)
