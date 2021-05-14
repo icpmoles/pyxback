@@ -16,6 +16,7 @@ Paginate= 10
 relativeURLs = true
 canonifyURLs= false
 enableEmoji = true
+minify = true
 
 
 [indexes]
