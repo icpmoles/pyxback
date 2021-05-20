@@ -49,8 +49,8 @@ minify = true
   footer_links = true #enables a footer navigation bar
   custom_navbar = true #makes the main navbar editable
   custom_footbar = true #maked the footbare editable 
-  cloudflare_analytics_token="244da1bd5f424514ae5e69f5cb35fb9b"
-  google_analytics_id= "G-FLZFX17QG8"
+  #cloudflare_analytics_token="244da1bd5f424514ae5e69f5cb35fb9b"
+  #google_analytics_id= "G-FLZFX17QG8"
 
   [params.alert]
     warning="⚠️"
