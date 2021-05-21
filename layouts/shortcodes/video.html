@@ -70,7 +70,7 @@
       {{- /* Loops trough all the VTT files matching the src name and extracts the language code */ -}}
       {{ with $sub }} 
         {{- range . -}}
-        <track src="{{ .RelPermalink }}" kind="subtitles" srclang="{{ slicestr (strings.TrimSuffix ".vtt" (strings.TrimPrefix $video_src .Name)) 1}}" />
+        <track src="{{ .RelPermalink }}" kind="subtitles" srclang="{{ slicestr (strings.TrimSuffix ".vtt" (strings.TrimPrefix $video_src .Name)) 1}}" label="{{ slicestr (strings.TrimSuffix ".vtt" (strings.TrimPrefix $video_src .Name)) 1}}"/>
         {{- end -}}
       {{- end -}}
       <p>{{ i18n "videoUnsupported" $video_dl | safeHTML}}</p>
