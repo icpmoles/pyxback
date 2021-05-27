@@ -9,7 +9,7 @@ tags:
   - pyxill
   - Hugo
   - Netlify
-  - Cloudflare Pages
+  - Cloudflare_Pages
   - Cloudflare
 banner: ""
 math: false

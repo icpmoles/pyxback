@@ -4,7 +4,7 @@ date: 2021-05-09T17:42:32+02:00
 draft: false
 author: "Iacopo Moles"
 latex: false
-tags:   [ "video", "hugo component", "hugo-video" ]
+tags:   [ "video", "hugo_component", "hugo-video" ]
 toc: false
 latex: false
 ---
