@@ -16,7 +16,7 @@ Syntax and configuration to render math elements with the theme
 
 In your FrontMatter for the page set
 
-{{< highlight C "linenos=true">}}
+{{< highlight TOML >}}
 
 math=true
 

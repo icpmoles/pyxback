@@ -104,7 +104,7 @@ Example of markdown supported by HUGO CMS:
 
 ## Code blocks
 
-{{< highlight go "linenos=table">}}
+{{< highlight go "linenos=inline">}}
 
 package main
 
@@ -118,9 +118,9 @@ fmt.Println("hello world")
 
 was produced by: [^markdown escape]
 
-{{< highlight markdown "linenos=table">}}
+{{< highlight markdown "linenos=inline">}}
 
-{{</*  highlight your_language "linenos=table" */>}}
+{{</*  highlight your_language "linenos=inline" */>}}
 
 package main
 
@@ -137,7 +137,7 @@ fmt.Println("hello world")
 
 To use footnotes[^wiki]
 
-{{< highlight markdown "linenos=table">}}
+{{< highlight markdown "linenos=inline">}}
 
 your text [^name of your footnote] ... your other text
 

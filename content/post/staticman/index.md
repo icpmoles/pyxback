@@ -55,12 +55,10 @@ A .txt file is going to be downloaded.
 
 Open it and copy the section made by:
 
-{{< highlight http "linenos=table">}}
-
+{{< highlight http >}}
 -----BEGIN RSA PRIVATE KEY-----
 (a long alphanumerical text)
 -----END RSA PRIVATE KEY-----
-
 {{< / highlight>}}
 
 You will need it later.
