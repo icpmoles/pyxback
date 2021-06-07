@@ -137,7 +137,7 @@ fmt.Println("hello world")
 
 To use footnotes[^wiki]
 
-{{< highlight markdown "linenos=inline">}}
+{{< highlight markdown>}}
 
 your text [^name of your footnote] ... your other text
 
