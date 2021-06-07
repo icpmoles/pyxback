@@ -73,6 +73,7 @@
         <track src="{{ .RelPermalink }}" kind="subtitles" srclang="{{ slicestr (strings.TrimSuffix ".vtt" (strings.TrimPrefix $video_src .Name)) 1}}" label="{{ slicestr (strings.TrimSuffix ".vtt" (strings.TrimPrefix $video_src .Name)) 1}}"/>
         {{- end -}}
       {{- end -}}
+      {{ with $poster }} <img src="{{ .Permalink }}" width="500" height="600"> {{ end }}
       <p>{{ i18n "videoUnsupported" $video_dl | safeHTML}}</p>
     </video>
     {{- end -}}
