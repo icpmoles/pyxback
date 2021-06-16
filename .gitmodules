@@ -3,4 +3,4 @@
 	url = https://github.com/IcpMoles/pyxill2
 [submodule "themes/hugo-video"]
 	path = themes/hugo-video
-	url = https://github.com/martignoni/hugo-video.git
+	url = https://github.com/IcpMoles/hugo-video.git
