@@ -8,9 +8,12 @@ codehl: false
 Pixyll is a simple, beautiful theme for [Hugo](http://gohugo.io/).
 Based on [Pixyll for Jekyll](https://github.com/johnotander/pixyll)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a971bc37-c8f3-40d0-ab1b-b28300b4a8d9/deploy-status)](https://app.netlify.com/sites/pixtest/deploys)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/IcpMoles/pyxback&stack=hugo)
-[![Import this project into Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=icpmoles/pyxback&engine=hugo&version=0.72.0)
+
+<a href="https://app.netlify.com/sites/pixtest/deploys"><img src="https://api.netlify.com/api/v1/badges/a971bc37-c8f3-40d0-ab1b-b28300b4a8d9/deploy-status" alt="Netlify Status"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/IcpMoles/pyxback&stack=hugo"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+<a href="https://app.forestry.io/quick-start?repo=icpmoles/pyxback&engine=hugo&version=0.88.1"><img src="https://assets.forestry.io/import-to-forestry.svg" alt="Import this project into Forestry"></a>
+
+
 
 ## How to
 
@@ -190,9 +193,9 @@ canonifyURLs= true
 ## Screenshots
 
 
-![Pixyll Screenshot](/uploads/mobile%20light.png)
-![Pixyll Screenshot](/uploads/mobile%20dark.png)
-![Pixyll Screenshot](/uploads/desktop%20light.png)
-![Pixyll Screenshot](/uploads/desktop%20dark.png)
+![Pixyll Screenshot Mobile Light theme](/uploads/mobile%20light.png)
+![Pixyll Screenshot Mobile Dark theme](/uploads/mobile%20dark.png)
+![Pixyll Screenshot Desktop Light theme](/uploads/desktop%20light.png)
+![Pixyll Screenshot Desktop Dark theme](/uploads/desktop%20dark.png)
 ## Lighthouse Score
 ![Lighthouse of 100](/uploads/Screenshot_20201022-105923~2.png)
