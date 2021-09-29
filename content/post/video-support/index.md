@@ -54,7 +54,9 @@ But if you want to add poster and multiple video types you just need to:
 post-folder
 ├── index.md
 ├── my-beautiful-screencast.jpeg
+├── my-beautiful-screencast.hevc.mp4
 ├── my-beautiful-screencast.mp4
+├── my-beautiful-screencast.av1.webm
 └── my-beautiful-screencast.webm {{< / highlight>}}
 
 {{< video src="input" >}}
@@ -114,6 +116,22 @@ post-folder
  {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" loop="true" */>}} {{< / highlight>}}
 
  {{<  video src="input" loop="true" >}} 
+
+### GIF mode
+
+By using loop, autoplay, no controls and mute we can use our video like a GIF
+
+ {{< highlight go "linenos=false">}} {{</*  video src="my-beautiful-screencast" loop="true" autoplay="true" controls="false"  muted="true"  */>}} {{< / highlight>}}
+
+ {{<  video src="input" loop="true" autoplay="true" controls="false"  muted="true" >}} 
+
+We can also use the faster `gif` shortcode
+
+ {{< highlight go "linenos=false">}} {{</*  gif src="my-beautiful-screencast"  */>}} {{< / highlight>}}
+
+ {{<  gif src="input"  >}} 
+
+
 
 
 ### Preload
