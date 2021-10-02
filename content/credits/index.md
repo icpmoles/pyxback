@@ -4,7 +4,10 @@ codehl = false
 date = 2020-10-04T22:00:00Z
 tags = []
 title = "Credits"
-
+[comments]
+host = "linuxrocks.online"
+username = "carl"
+id = "105105837504372590"
 +++
 [Hugo](https://gohugo.io)
 
@@ -27,3 +30,9 @@ title = "Credits"
 [Staticman](https://staticman.net)
 
 [Heroku](https://www.heroku.com)
+
+[SimpleLightBox](https://simplelightbox.com/)
+
+[DOMPurify](https://github.com/cure53/DOMPurify)
+
+[Mastodon comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/)
