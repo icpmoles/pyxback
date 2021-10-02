@@ -127,11 +127,11 @@ By using loop, autoplay, no controls and mute we can use our video like a GIF
 
 We can also use the faster `gif` shortcode
 
- {{< highlight go "linenos=false">}} {{</*  gif src="my-beautiful-screencast"  */>}} {{< / highlight>}}
+ {{< highlight go "linenos=false">}} {{</*  gif "my-beautiful-screencast"  */>}} {{< / highlight>}}
 
- {{<  gif src="input"  >}} 
+ {{<  gif "input"  >}} 
 
-
+{{<warning "Autoplay annoyance" >}} To avoid unwanted data usage it's better to use small compressed videos {{</warning>}}
 
 
 ### Preload
