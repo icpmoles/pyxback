@@ -3,6 +3,8 @@ title: About
 codehl: false
 
 ---
+
+
 # Pixyll
 
 Pixyll is a simple, beautiful theme for [Hugo](http://gohugo.io/).
@@ -193,9 +195,14 @@ canonifyURLs= true
 ## Screenshots
 
 
-![Pixyll Screenshot Mobile Light theme](mobile_light.png)
-![Pixyll Screenshot Mobile Dark theme](mobile_dark.png)
-![Pixyll Screenshot Desktop Light theme](desktop_light.png)
-![Pixyll Screenshot Desktop Dark theme](desktop_dark.png)
+
+{{<gallery>}}
+{{<ge "mobile_light">}}
+{{<ge "mobile_dark">}}
+{{<ge "desktop_light.png">}}
+{{<ge "desktop_dark">}}
+{{</gallery>}}
+
 ## Lighthouse Score
 ![Lighthouse of 100](lighthouse.png)
+

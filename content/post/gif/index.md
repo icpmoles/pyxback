@@ -69,5 +69,5 @@ For now the only alternative format supported are the video formats from the `vi
 
 To reduce the video file size remenber to remove the audio track.
 
-Since converting for every format can be cumbersome I recommend to only convert the gifs to webm since it's a good compromise between size and [device support](https://caniuse.com/webm). A good collection of quality sizes for the variuos resolutions can be found on the [Google VP9 Guide](https://developers.google.com/media/vp9/settings/vod#ffmpeg_command_lines). Remenber to add `-an` to the command when coming from a video.
+Since converting for every format can be cumbersome I recommend to only convert the gifs to webm since it's a good compromise between size and [device support](https://caniuse.com/webm). A good collection of quality sizes for the variuos resolutions can be found on the [Google VP9 Guide](https://developers.google.com/media/vp9/settings/vod#ffmpeg_command_lines). Remenber to add `-an` to the command when coming from a video and to skip the `-vf` parameter
 
