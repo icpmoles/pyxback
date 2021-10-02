@@ -193,9 +193,9 @@ canonifyURLs= true
 ## Screenshots
 
 
-![Pixyll Screenshot Mobile Light theme](/uploads/mobile%20light.png)
-![Pixyll Screenshot Mobile Dark theme](/uploads/mobile%20dark.png)
-![Pixyll Screenshot Desktop Light theme](/uploads/desktop%20light.png)
-![Pixyll Screenshot Desktop Dark theme](/uploads/desktop%20dark.png)
+![Pixyll Screenshot Mobile Light theme](mobile_light.png)
+![Pixyll Screenshot Mobile Dark theme](mobile_dark.png)
+![Pixyll Screenshot Desktop Light theme](desktop_light.png)
+![Pixyll Screenshot Desktop Dark theme](desktop_dark.png)
 ## Lighthouse Score
-![Lighthouse of 100](/uploads/Screenshot_20201022-105923~2.png)
+![Lighthouse of 100](lighthouse.png)
