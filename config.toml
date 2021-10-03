@@ -51,7 +51,7 @@ minify = true
   custom_footbar = true #maked the footbare editable 
   #cloudflare_analytics_token="244da1bd5f424514ae5e69f5cb35fb9b"
   #google_analytics_id= "G-FLZFX17QG8"
-  mastodon_admin_instance="https://mastodon.social/icpmoles"
+  mastodon_admin_instance="https://mastodon.social/@icpmoles"
 
   [params.alert]
     warning="⚠️"
