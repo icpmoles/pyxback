@@ -2,12 +2,12 @@
 author = "Iacopo Moles"
 codehl = false
 date = 2020-10-04T22:00:00Z
-tags = []
+
 title = "Credits"
 [comments]
-host = "linuxrocks.online"
-username = "carl"
-id = "105463655803971969"
+host = "mastodon.social"
+username = "icpmoles"
+id = "107037863811874631"
 +++
 [Hugo](https://gohugo.io)
 
