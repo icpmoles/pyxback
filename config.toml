@@ -109,7 +109,7 @@ minify = true
 
   [[menu.main]]
     name = "Tags"
-    url = "/tags/"
+    url = "/taglist/"
     weight = -120
  
 
