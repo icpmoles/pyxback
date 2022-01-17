@@ -30,7 +30,7 @@ Hugo supports custom elements to incorporate snippets from other services.
 
 Renders as:
 
-{{< tweet 877500564405444608 >}}
+{{< tweet GoHugoIO 877500564405444608 >}}
 
 ## Vimeo
 
